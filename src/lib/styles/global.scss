@@ -1,0 +1,77 @@
+@import 'normalize.css';
+
+/* src/lib/styles/global.scss */
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%; /* Ensure the body takes up the full height */
+}
+
+body {
+	max-width: $max-width-container;
+	margin: 0 auto;
+	font-family: $typeface-family-base;
+	background-color: $color-neutral-400;
+	color: $color-neutral-100;
+}
+
+//	--------------------------------------------------
+//	Global Typography Styles
+//	--------------------------------------------------
+h1, h2, h3, h4, h5, h6 {
+	font-family: $typeface-family-heading;
+	margin: 0;
+	padding: 0;
+	
+	span.highlight {
+		font-family: $typeface-family-highlight;
+		font-weight: $typeface-weight-bold;
+	}
+}
+h1 {
+	font-size: $typeface-size-heading-1;
+	line-height: $typeface-line-height-display;
+	letter-spacing: $typeface-tracking-heading;
+}
+h2 {
+	font-size: $typeface-size-heading-2;
+	line-height: $typeface-line-height-display;
+	letter-spacing: $typeface-tracking-heading;
+}
+h3 {
+	font-size: $typeface-size-heading-3;
+	line-height: $typeface-line-height-display;
+	letter-spacing: $typeface-tracking-heading;
+}
+h4 {
+	font-size: $typeface-size-heading-4;
+	line-height: $typeface-line-height-heading;
+	letter-spacing: $typeface-tracking-heading;
+}
+h5 {
+	font-size: $typeface-size-heading-5;
+	line-height: $typeface-line-height-heading;
+	letter-spacing: $typeface-tracking-heading;
+}
+h6 {
+	font-size: $typeface-size-heading-6;
+	line-height: $typeface-line-height-heading;
+	letter-spacing: $typeface-tracking-heading;
+}
+p {
+	margin: 0;
+	padding: 0;
+	font-family: $typeface-family-base;
+	line-height: $typeface-line-height-base;
+	letter-spacing: $typeface-tracking-base;
+
+	&.-large {font-size: $typeface-size-body-large;}
+	&.-medium {font-size: $typeface-size-body-medium;}
+	&.-small {font-size: $typeface-size-body-small;}
+	&.-micro {font-size: $typeface-size-body-micro;}
+	&.-nano {font-size: $typeface-size-body-nano; text-transform: uppercase;}
+}
+
+a {
+	text-decoration: none;
+}
