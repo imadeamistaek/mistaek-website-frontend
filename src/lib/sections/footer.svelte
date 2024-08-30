@@ -63,7 +63,7 @@
 
 
 		@media(min-width: $breakpoint-lg) {
-			& {padding: $space-1000 0 $space-50;}
+			& {padding: $space-1000 0 $space-800;}
 		}
 	}
 </style>
