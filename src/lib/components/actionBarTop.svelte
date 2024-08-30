@@ -1,7 +1,7 @@
 <script>
 	const links = [
 	// { item: '1', label: 'About', url: 'https://www.instagram.com/andresequeira__' },
-	{ item: '1', label: 'Blog', url: 'https://blog.mistaek.com/' }
+	{ item: '1', label: 'Blog', url: 'https://www.blog.mistaek.com/' }
 	];
 </script>
 
