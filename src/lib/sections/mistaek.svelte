@@ -55,7 +55,7 @@
 			&.mobile_only {display: block; padding: $space-200 0;}
 		}
 		
-		@media(min-width: $breakpoint-md) {
+		@media(min-width: $breakpoint-lg) {
 			& {
 				flex: 1;
 				

@@ -51,7 +51,7 @@
 	.row .col {
 		> * { width: 100%;}
 
-		@media(min-width: $breakpoint-md) {
+		@media(min-width: $breakpoint-lg) {
 			&:first-child {
 				display: flex;
 				justify-content: flex-start;

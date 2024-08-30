@@ -56,13 +56,13 @@
 				border-top: $border-width solid $color-brand-dark-lighter;
 			}
 
-			@media(min-width: $breakpoint-md) {
+			@media(min-width: $breakpoint-lg) {
 				& {flex-direction: row;}
 			}
 		}
 
 
-		@media(min-width: $breakpoint-md) {
+		@media(min-width: $breakpoint-lg) {
 			& {padding: $space-1000 0 $space-50;}
 		}
 	}

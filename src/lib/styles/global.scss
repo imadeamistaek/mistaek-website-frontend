@@ -9,7 +9,6 @@ html, body {
 
 body {
 	max-width: $max-width-container;
-	width: 100%;
 	margin: 0 auto;
 	padding: $space-200;
 	font-family: $typeface-family-base;
@@ -84,7 +83,7 @@ a {
 	width: 100%;
 	padding: $space-600 0;
 
-	@media(min-width: $breakpoint-md) {
+	@media(min-width: $breakpoint-lg) {
 		& { padding: $space-1000 0; }
 	}
 }
@@ -96,7 +95,7 @@ a {
 
 	.col {flex: 1;}
 
-	@media(min-width: $breakpoint-md) {
+	@media(min-width: $breakpoint-lg) {
 		& { flex-direction: row; }
 	}
 }
@@ -111,7 +110,7 @@ a {
 	flex-direction: column;
 	gap: $space-500;
 
-	@media(min-width: $breakpoint-md) {
+	@media(min-width: $breakpoint-lg) {
 		& {
 			display: grid;
 			grid-template-columns: 1fr 1fr;
@@ -146,7 +145,7 @@ main {
 
 		p {flex: 1;}
 
-		@media(min-width: $breakpoint-md) {
+		@media(min-width: $breakpoint-lg) {
 			& {
 				flex-direction: row;
 				gap: $space-500;
@@ -226,7 +225,7 @@ main {
 .-horizontal {
 	flex-direction: column;
 
-	@media(min-width: $breakpoint-md) {
+	@media(min-width: $breakpoint-lg) {
 		& {flex-direction: row;}
 	}
 }

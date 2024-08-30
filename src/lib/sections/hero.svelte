@@ -27,7 +27,7 @@
 		h1 { margin-bottom: $space-300; }
 		p {
 			width: 100%;
-			max-width: 540px;
+			max-width: 560px;
 			margin-bottom: $space-400;
 		}
 	}

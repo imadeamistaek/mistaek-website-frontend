@@ -82,7 +82,7 @@
 				.content_group {
 					width: 100%;
 
-					@media(min-width: $breakpoint-md) {
+					@media(min-width: $breakpoint-lg) {
 						& {width: 50%;}
 					}
 				}
@@ -98,7 +98,7 @@
 						h5 {margin: $space-1000 0 $space-500;}
 					}
 
-					@media(min-width: $breakpoint-md) {
+					@media(min-width: $breakpoint-lg) {
 						& {width: 50%;}
 					}
 

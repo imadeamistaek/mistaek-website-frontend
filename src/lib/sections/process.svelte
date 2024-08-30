@@ -48,7 +48,7 @@
 
 		.grid :global(.numbered_content:first-child) {grid-column: 2/2}
 		
-		@media(min-width: $breakpoint-md) {
+		@media(min-width: $breakpoint-lg) {
 			& {padding-top: $space-max;}
 		}
 

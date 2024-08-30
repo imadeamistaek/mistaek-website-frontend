@@ -52,7 +52,7 @@
 		}
 		
 		/* Large screens layout */
-		@media(min-width: $breakpoint-md) {
+		@media(min-width: $breakpoint-lg) {
 			& {					
 				.content_group {
 					grid-column: 1/2;

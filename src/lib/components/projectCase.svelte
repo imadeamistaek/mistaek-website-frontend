@@ -85,7 +85,7 @@
 						.action {opacity: 1;}
 					}
 
-					@media(min-width: $breakpoint-md) {
+					@media(min-width: $breakpoint-lg) {
 						& {
 							flex-direction: row;
 							gap: $space-500;

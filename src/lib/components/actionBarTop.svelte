@@ -27,16 +27,23 @@
 <style lang="scss">
 	.action_bar {
 		position: fixed;
+		left: 0;
+		right: 0;
 		top: 0;
 		max-width: $max-width-container;
-		width: 100vw;
+		width: 100%;
 		display: flex;
 		flex-direction: row;
 		align-items: center;
 		justify-content: space-between;
-		padding: $space-300 0;
+		padding: $space-300;
+		margin: 0 auto;
 		z-index: $zindex-fixed;
 		box-sizing: border-box;
+
+		@media(min-width: $breakpoint-xl) {
+			& {padding: $space-300 0;}
+		}
 		
 		a {
 			display: flex;

@@ -39,7 +39,7 @@
 		.text_group {
 			padding-top: $space-0;
 
-			@media(min-width: $breakpoint-md) {
+			@media(min-width: $breakpoint-lg) {
 				& {padding-top: $space-1000;}
 			}
 		}
