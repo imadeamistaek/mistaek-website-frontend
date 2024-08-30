@@ -5,7 +5,7 @@
 <div class="action_bar -bottom">
 	
 	<div class="slot -left">
-		<p class="body_text -micro">Working remotely from Setúbal, PT (GMT+0)</p>
+		<p class="body_text -micro">Working remotely from Setúbal, PT (GMT+1)</p>
 	</div>
 
 	<div class="slot -right">
