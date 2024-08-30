@@ -5,83 +5,12 @@
 	];
 </script>
 
-<style lang="scss">
-.action_bar {
-	position: fixed;
-	top: 0;
-	max-width: $max-width-container;
-	width: 100%;
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	padding: $space-300 0;
-	z-index: $zindex-fixed;
-	box-sizing: border-box;
-
-	a {
-		display: flex;
-		flex-direction: row;
-		align-items: flex-start;
-		color: $color-neutral-100;
-		text-decoration: none;
-	}
-
-	.navigation-links {
-		list-style: none;
-		display: flex;
-
-		li {
-			margin-left: $space-200;
-
-			a {
-				display: flex;
-				flex-direction: row;
-				align-items: flex-start;
-				color: $color-neutral-100;
-				text-decoration: none;
-
-				h6 {
-					position: relative;
-					white-space: nowrap;
-
-					&::after {
-						content: '';
-						position:absolute;
-						width: 100%;
-						height: 1px;
-						background-color: $color-neutral-100;
-						top: 100%;
-						left: 0;
-						pointer-events: none;
-						transform-origin: 100% 50%;
-						transform: scale3d(0, 1, 1);
-						transition: transform $transition-duration-fast;
-						transition-timing-function: $transition-timing-function;
-					}
-
-					&:hover {
-						&::after {
-							transform-origin: 0% 50%;
-							transform: scale3d(1, 1, 1);
-						}
-					}
-				}
-
-				p { margin-right: $space-50; }
-			}
-		}
-	}
-
-}
-</style>
-
 <div class="action_bar -top">
 	
 	<a href="./" rel="noopener noreferrer" aria-label="Home">
 		<h6 class="brand">Mistaek</h6>
 	</a>
-
+	
 	<ul class="navigation-links">
 		{#each links as { item, label, url }}
 		<li>
@@ -92,5 +21,76 @@
 		</li>
 		{/each}
 	</ul>
-
+	
 </div>
+
+<style lang="scss">
+	.action_bar {
+		position: fixed;
+		top: 0;
+		max-width: $max-width-container;
+		width: 100vw;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		padding: $space-300 0;
+		z-index: $zindex-fixed;
+		box-sizing: border-box;
+		
+		a {
+			display: flex;
+			flex-direction: row;
+			align-items: flex-start;
+			color: $color-neutral-100;
+			text-decoration: none;
+		}
+		
+		.navigation-links {
+			list-style: none;
+			display: flex;
+			
+			li {
+				margin-left: $space-200;
+				
+				a {
+					display: flex;
+					flex-direction: row;
+					align-items: flex-start;
+					color: $color-neutral-100;
+					text-decoration: none;
+					
+					h6 {
+						position: relative;
+						white-space: nowrap;
+						
+						&::after {
+							content: '';
+							position:absolute;
+							width: 100%;
+							height: 1px;
+							background-color: $color-neutral-100;
+							top: 100%;
+							left: 0;
+							pointer-events: none;
+							transform-origin: 100% 50%;
+							transform: scale3d(0, 1, 1);
+							transition: transform $transition-duration-fast;
+							transition-timing-function: $transition-timing-function;
+						}
+						
+						&:hover {
+							&::after {
+								transform-origin: 0% 50%;
+								transform: scale3d(1, 1, 1);
+							}
+						}
+					}
+					
+					p { margin-right: $space-50; }
+				}
+			}
+		}
+		
+	}
+</style>

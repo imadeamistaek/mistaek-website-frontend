@@ -13,6 +13,7 @@
 		display: flex;
 		flex-direction: row;
 		align-items: center;
+		padding-bottom: $space-500;
 
 		span {
 			padding: $space-50 $space-100;

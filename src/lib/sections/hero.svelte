@@ -4,7 +4,7 @@
 
 <section class="hero">
 	<h1>Empowering <span class="highlight">innovative startups</span> with design that <span class="highlight">drives growth</span></h1>
-	<p class="subheading">I simplify complex design challenges for tech-driven companies focused on health, sustainability, and science, helping you build impactful brands that inspire and connect.</p>
+	<p class="body_text -large -subtle">I simplify complex design challenges for tech-driven companies focused on health, sustainability, and science, helping you build impactful brands that inspire and connect.</p>
 	<ButtonEmail />
 </section>
 
@@ -29,7 +29,6 @@
 			width: 100%;
 			max-width: 540px;
 			margin-bottom: $space-400;
-			color: $color-neutral-300;
 		}
 	}
 </style>

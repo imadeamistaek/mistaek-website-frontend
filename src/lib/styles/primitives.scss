@@ -78,8 +78,8 @@ $typeface-line-height-heading: 1.2;
 $typeface-line-height-base: 1.4;
 
 // Letter Spacing
-$typeface-tracking-heading: 0;
-$typeface-tracking-base: 1;
+$typeface-tracking-heading: .2px;
+$typeface-tracking-base: .4px;
 
 // --------------------------------------------------
 // 3. Spacing
@@ -96,6 +96,7 @@ $space-700: 56px;
 $space-800: 64px;
 $space-900: 72px;
 $space-1000: 80px;
+$space-max: 104px;
 
 // --------------------------------------------------
 // 4. Breakpoints
