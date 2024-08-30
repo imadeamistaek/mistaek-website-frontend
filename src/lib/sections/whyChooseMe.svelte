@@ -30,7 +30,7 @@
 					</p>
 				</div>
 
-				<div class="testimonials">
+				<!-- <div class="testimonials">
 					
 					<h5>Hear from those who’ve worked with me</h5>
 					
@@ -63,7 +63,7 @@
 						
 					</div>
 
-				</div>
+				</div> -->
 
 			</div>
 			

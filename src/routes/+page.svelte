@@ -26,7 +26,7 @@
 	 <WhyChooseMe />
 	 <Services />
 	 <TrustedBy />
-	 <Mistaek />
+	 <!-- <Mistaek /> -->
 	
 </main>
 

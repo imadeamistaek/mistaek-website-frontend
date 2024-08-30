@@ -21,9 +21,9 @@
 				
 			</div>
 			
-			<div class="content_group -borderless">
+			<!-- <div class="content_group -borderless">
 				<ProjectCase />
-			</div>
+			</div> -->
 			
 		</div>
 	</div>
