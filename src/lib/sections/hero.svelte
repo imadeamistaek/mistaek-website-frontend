@@ -4,7 +4,7 @@
 
 <section class="hero">
 	<h1>Empowering <span class="highlight">innovative startups</span> with design that <span class="highlight">drives growth</span></h1>
-	<p class="body_text -large -subtle">I simplify complex design challenges for tech-driven companies focused on health, sustainability, and science, helping you build impactful brands that inspire and connect.</p>
+	<p class="body_text -large -subtle">As a designer, I simplify complex challenges for tech-driven companies in health, sustainability, and science, creating impactful brands that inspire and connect.</p>
 	<ButtonEmail />
 </section>
 
