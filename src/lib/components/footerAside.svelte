@@ -25,7 +25,7 @@
 <div class="content_group -newsletter -borderless">
 	<p class="body_text -nano -subtle">My Newsletter</p>
 	<p class="body_text -micro">Subscribe my newsletter and explore more about my services</p>
-	<script src="https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js" data-label-1="LandingPage" data-button-color="#16161D" data-button-text-color="#FFFFFF" data-site="https://www.mistaek.com/" data-locale="en" async></script>
+	<script src="https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js" data-label-1="landing_page" data-button-color="#F24F2D" data-button-text-color="#FFFFFF" data-site="https://www.blog.mistaek.com/" data-locale="en" async></script>
 	
 </div>
 

@@ -43,7 +43,7 @@
 			flex-direction: row;
 			align-items: center;
 			justify-content: space-between;
-			padding: $space-300;
+			padding: $space-200;
 			margin: 0 auto;
 			z-index: $zindex-fixed;
 			box-sizing: border-box;

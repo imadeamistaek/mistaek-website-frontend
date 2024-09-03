@@ -38,21 +38,45 @@ h1 {
 	@media(min-width: $breakpoint-lg) {
 		& { font-size: $typeface-size-heading-1; }
 	}
+	@media(max-width: $breakpoint-xs) {
+		& { font-size: $typeface-size-heading-4; }
+	}
 }
 h2 {
-	font-size: $typeface-size-heading-2;
+	font-size: $typeface-size-heading-4;
 	line-height: $typeface-line-height-display;
 	letter-spacing: $typeface-tracking-heading;
+
+	@media(min-width: $breakpoint-lg) {
+		& { font-size: $typeface-size-heading-2; }
+	}
+	@media(max-width: $breakpoint-xs) {
+		& { font-size: $typeface-size-heading-5; }
+	}
 }
 h3 {
-	font-size: $typeface-size-heading-3;
+	font-size: $typeface-size-heading-5;
 	line-height: $typeface-line-height-display;
 	letter-spacing: $typeface-tracking-heading;
+
+	@media(min-width: $breakpoint-lg) {
+		& { font-size: $typeface-size-heading-3; }
+	}
+	@media(max-width: $breakpoint-xs) {
+		& { font-size: $typeface-size-heading-6; }
+	}
 }
 h4 {
-	font-size: $typeface-size-heading-4;
+	font-size: $typeface-size-heading-6;
 	line-height: $typeface-line-height-heading;
 	letter-spacing: $typeface-tracking-heading;
+
+	@media(min-width: $breakpoint-lg) {
+		& { font-size: $typeface-size-heading-4; }
+	}
+	@media(max-width: $breakpoint-xs) {
+		& { font-size: $typeface-size-heading-6; }
+	}
 }
 h5 {
 	font-size: $typeface-size-heading-5;
@@ -77,6 +101,10 @@ p {
 	&.-small {font-size: $typeface-size-body-small;}
 	&.-micro {font-size: $typeface-size-body-micro;}
 	&.-nano {font-size: $typeface-size-body-nano; text-transform: uppercase;}
+
+	@media(max-width: $breakpoint-xs) {
+		& {font-size: $typeface-size-body-small;}
+	}
 }
 
 a {
