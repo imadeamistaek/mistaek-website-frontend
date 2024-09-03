@@ -3,17 +3,17 @@
 	import SectionIdentifier from "../components/sectionIdentifier.svelte";	
 </script>
 
-<section class="section process">
+<section class="section process" aria-labelledby="process-heading">
 	<div class="content">
 		<div class="row">
 			
 			
 			<div class="col content_group -borderless">
 				<SectionIdentifier letter="C" label="My 3-Step Process to Success"/>
-				<div class="heading_group">
+				<header class="heading_group">
 					<p class="body_text -large">Struggling to turn your vision into a clear, impactful brand?</p>
 					<h4>I believe in making things simple and straightforward, ensuring we’re always on the same page.</h4>
-				</div>
+				</header>
 			</div>
 			
 			<div class="col">

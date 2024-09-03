@@ -107,9 +107,18 @@ p {
 	}
 }
 
+
+//	--------------------------------------------------
+//	Global Styles
+//	--------------------------------------------------
 a {
 	height: $space-300;
 	text-decoration: none;
+
+	&:focus-visible {
+		outline: 4px solid $color-neutral-400;
+		box-shadow: 0 0 0 8px $color-brand-accent;
+	}
 }
 
 .section {
@@ -211,6 +220,10 @@ main {
 		&:hover {
 			background-color: darken($color-brand-accent, 8%);
 		}
+		&:focus-visible {
+			outline: 4px solid $color-neutral-400;
+			box-shadow: 0 0 0 8px $color-brand-accent;
+		}
 	}
 	&.-border-light {
 		padding: $space-200 $space-100;
@@ -222,9 +235,13 @@ main {
 		&:hover {
 			border: $border-width solid $color-neutral-100;
 		}
+		&:focus-visible {
+			outline: 3px solid $color-neutral-400;
+			box-shadow: 0 0 0 6px $color-brand-accent;
+		}
 	}
 
-	p {
+	span {
 		font-family: $typeface-family-heading;
 		font-weight: $typeface-weight-normal;
 		font-size: $typeface-size-heading-6;
@@ -261,7 +278,6 @@ main {
 //	--------------------------------------------------
 //	UTILITIES Styles
 //	--------------------------------------------------
-
 .-subtle {color:$color-neutral-300;}
 .-primary {color:$color-brand-accent;}
 .-vertical {flex-direction: column;}

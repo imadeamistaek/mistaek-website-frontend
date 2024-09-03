@@ -2,7 +2,7 @@
 	import SectionIdentifier from "../components/sectionIdentifier.svelte";	
 </script>
 
-<section class="section mistaek">
+<section class="section mistaek" aria-labelledby="mistaek-heading">
 	<div class="content">
 		<div class="row">
 			

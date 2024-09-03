@@ -3,7 +3,7 @@
 	export let label = 'Section Label'; // Default label
 </script>
 
-<div class="identifier">
+<div class="identifier" aria-label="{label}">
 	<span class="number"><p class="body_text -nano">{letter}</p></span>
 	<p class="body_text -nano">{label}</p>
 </div>

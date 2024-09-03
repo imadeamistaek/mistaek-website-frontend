@@ -3,17 +3,17 @@
     import TestimonialContent from "../components/testimonialContent.svelte";
 </script>
 
-<section class="section why_choose">
+<section class="section why_choose" aria-labelledby="why-choose-heading">
 	<div class="content">
 
 		<div class="row">
 			<div class="content_group -borderless">
 				
 				<SectionIdentifier letter="D" label="Why Choose Me?"/>
-				<div class="heading_group">
+				<header class="heading_group">
 					<p class="body_text -large -subtle">Detail-oriented, approachable, and solution-driven</p>
 					<h4>I’m committed to delivering results that matter. With a focus on accessibility and usability, I create designs that not only look good but also work flawlessly.</h4>
-				</div>
+				</header>
 				
 			</div>
 		</div>

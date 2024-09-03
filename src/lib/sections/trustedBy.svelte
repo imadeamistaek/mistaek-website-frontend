@@ -3,16 +3,16 @@
 	import SectionIdentifier from "../components/sectionIdentifier.svelte";	
 </script>
 
-<section class="section trusted_by">
+<section class="section trusted_by" aria-labelledby="trusted-by-heading">
 	<div class="content">
 		<div class="row -vertical">
 			
 			<div class="content_group -borderless -horizontal">
 				
-				<div class="heading_group">
+				<header class="heading_group">
 					<SectionIdentifier letter="F" label="Trusted by forward-thinking companies"/>
 					<h4>My clients love the clarity, creativity, and results I bring to the table.</h4>
-				</div>
+				</header>
 				
 				<div class="text_group -subtle">
 					<h5>Fidelidade, OK! Teleseguros, BiG, Pedigree, Whiskas, BBDO, Smart, Mercedes-Benz, C.Santos VP, Young Lions PT, ComOn, Redbull, Solinca, Jerónimo Martins, Esporão, Troia Resort, Fox, FC. Porto, CUF, FFMS, Santander, Interaction Design Foundation (IxDF)</h5>
