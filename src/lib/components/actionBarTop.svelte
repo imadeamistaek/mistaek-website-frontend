@@ -12,16 +12,18 @@
 			<h6 class="brand">Mistaek</h6>
 		</a>
 		
-		<ul class="navigation-links">
-			{#each links as { item, label, url }}
-			<li>
-				<a href={url} target="_blank" rel="noopener noreferrer" aria-label={label}>
-					<p class="body_text -nano">( {item} )</p>
-					<h6 class="navigation_item">{label}</h6>
-				</a>
-			</li>
-			{/each}
-		</ul>
+		<nav>
+			<ul class="navigation-links">
+				{#each links as { item, label, url }}
+				<li data-number="( {item} )">
+					<a href={url} target="_blank" rel="noopener noreferrer" aria-label={label}>
+						<!-- <p class="body_text -nano">( {item} )</p> -->
+						<h6 class="navigation_item">{label}</h6>
+					</a>
+				</li>
+				{/each}
+			</ul>
+		</nav>
 		
 	</div>
 </div>
@@ -35,6 +37,7 @@
 		-webkit-backdrop-filter: blur(16px);
 		backdrop-filter: blur(16px);
 		background: rgba(20, 20, 21, .08);
+		z-index: $zindex-fixed;
 		
 		.container {
 			max-width: $max-width-container;
@@ -76,7 +79,21 @@
 				display: flex;
 				
 				li {
+					display: flex;
 					margin-left: $space-200;
+
+					&::before {
+						content: attr(data-number);
+						display: inline-block;
+						text-align: center;
+						line-height: 20px; /* Center text vertically */
+						margin-right: 8px; /* Space between number and text */
+						font-size: $typeface-size-body-nano;
+						font-family: $typeface-family-base;
+						line-height: $typeface-line-height-base;
+						letter-spacing: $typeface-tracking-base;
+						color: $color-neutral-100;
+					}
 					
 					a {
 						display: flex;
@@ -111,8 +128,6 @@
 								}
 							}
 						}
-						
-						p { margin-right: $space-50; }
 					}
 				}
 			}

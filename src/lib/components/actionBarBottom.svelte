@@ -26,6 +26,7 @@
 		-webkit-backdrop-filter: blur(16px);
 		backdrop-filter: blur(16px);
 		background: rgba(20, 20, 21, .08);
+		z-index: $zindex-fixed;
 		
 		.container {
 			max-width: $max-width-container;
