@@ -108,6 +108,7 @@ p {
 }
 
 a {
+	height: $space-300;
 	text-decoration: none;
 }
 
@@ -221,6 +222,16 @@ main {
 		&:hover {
 			border: $border-width solid $color-neutral-100;
 		}
+	}
+
+	p {
+		font-family: $typeface-family-heading;
+		font-weight: $typeface-weight-normal;
+		font-size: $typeface-size-heading-6;
+		line-height: $typeface-line-height-heading;
+		letter-spacing: $typeface-tracking-heading;
+		margin: 0;
+		padding: 0;
 	}
 
 	i {

@@ -42,7 +42,7 @@
 			padding: 0;
 			
 			li {
-				margin: $space-50 $space-0;
+				margin: $space-100 $space-0;
 				
 				a {
 					position: relative;

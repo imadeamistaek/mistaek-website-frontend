@@ -53,10 +53,10 @@
 
 			.slot {
 				flex: 1;
+				align-items: center;
 	
 				&.-right {
 					display: flex;
-					align-items: flex-end;
 					justify-content: flex-end;
 					flex-direction: column;
 				}
