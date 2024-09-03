@@ -8,7 +8,7 @@
 		
 		<main>
 			<h3>Ready to create <span class="highlight">something amazing</span>?</h3>
-			<p class="body_text -large -subtle">Let’s work together to build a brand that stands out, drives growth, and inspires change. Fill out the form below, and I’ll get back to you as soon as possible.</p>
+			<p class="body_text -large -subtle">Let’s work together to build a brand that stands out, drives growth, and inspires change. Send me a message, and I’ll get back to you as soon as possible.</p>
 	
 			<ButtonEmail />
 	

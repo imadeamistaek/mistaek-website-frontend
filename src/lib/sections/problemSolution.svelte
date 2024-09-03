@@ -16,7 +16,7 @@
 						Many startups face the challenge of translating their innovative ideas into a cohesive brand that resonates with their audience.
 					</p>
 					<p class="body_text -medium -subtle">
-						Whether it’s ensuring consistency across digital platforms, creating user-friendly designs, or telling a compelling story, the process can feel overwhelming.
+						Whether it’s ensuring consistency across digital platforms, creating user-friendly designs, or telling a compelling story, the process can feel overwhelming. That's where I come in.
 					</p>
 				</div>
 			</div>
