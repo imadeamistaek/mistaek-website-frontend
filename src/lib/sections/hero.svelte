@@ -3,8 +3,8 @@
 </script>
 
 <section class="hero" aria-labelledby="hero-heading">
-	<h1>Empowering <span class="highlight">innovative startups</span> with design that <span class="highlight">drives growth</span></h1>
-	<p class="body_text -large -subtle">As a designer, I simplify complex challenges for tech-driven companies in health, sustainability, and science, creating impactful brands that inspire and connect.</p>
+	<h1>Empowering <span class="highlight">forward-thinking startups</span> with design that <span class="highlight">drives growth</span></h1>
+	<p class="body_text -large -subtle">I create user-friendly websites, impactful branding, and seamless digital experiences for tech companies in health, sustainability, and science—fostering lasting connections and business growth.</p>
 	<ButtonEmail />
 </section>
 
@@ -27,7 +27,7 @@
 		h1 { margin-bottom: $space-300; }
 		p {
 			width: 100%;
-			max-width: 560px;
+			max-width: 640px;
 			margin-bottom: $space-400;
 		}
 	}

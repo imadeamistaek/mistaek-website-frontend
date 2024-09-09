@@ -1,6 +1,11 @@
 @import 'normalize.css';
 
-/* src/lib/styles/global.scss */
+html {
+	scroll-behavior: smooth;
+	@media (prefers-reduced-motion: reduce) {
+		& { scroll-behavior: auto; }
+	}
+}
 html, body {
 	margin: 0;
 	padding: 0;
@@ -34,7 +39,7 @@ h1 {
 	font-size: $typeface-size-heading-3;
 	line-height: $typeface-line-height-display;
 	letter-spacing: $typeface-tracking-heading;
-
+	
 	@media(min-width: $breakpoint-lg) {
 		& { font-size: $typeface-size-heading-1; }
 	}
@@ -46,7 +51,7 @@ h2 {
 	font-size: $typeface-size-heading-4;
 	line-height: $typeface-line-height-display;
 	letter-spacing: $typeface-tracking-heading;
-
+	
 	@media(min-width: $breakpoint-lg) {
 		& { font-size: $typeface-size-heading-2; }
 	}
@@ -58,7 +63,7 @@ h3 {
 	font-size: $typeface-size-heading-5;
 	line-height: $typeface-line-height-display;
 	letter-spacing: $typeface-tracking-heading;
-
+	
 	@media(min-width: $breakpoint-lg) {
 		& { font-size: $typeface-size-heading-3; }
 	}
@@ -70,7 +75,7 @@ h4 {
 	font-size: $typeface-size-heading-6;
 	line-height: $typeface-line-height-heading;
 	letter-spacing: $typeface-tracking-heading;
-
+	
 	@media(min-width: $breakpoint-lg) {
 		& { font-size: $typeface-size-heading-4; }
 	}
@@ -95,13 +100,13 @@ p {
 	line-height: $typeface-line-height-base;
 	letter-spacing: $typeface-tracking-base;
 	color: $color-neutral-100;
-
+	
 	&.-large {font-size: $typeface-size-body-large;}
 	&.-medium {font-size: $typeface-size-body-medium;}
 	&.-small {font-size: $typeface-size-body-small;}
 	&.-micro {font-size: $typeface-size-body-micro;}
 	&.-nano {font-size: $typeface-size-body-nano; text-transform: uppercase;}
-
+	
 	@media(max-width: $breakpoint-xs) {
 		& {font-size: $typeface-size-body-small;}
 	}
@@ -114,7 +119,7 @@ p {
 a {
 	height: $space-300;
 	text-decoration: none;
-
+	
 	&:focus-visible {
 		outline: 4px solid $color-neutral-400;
 		box-shadow: 0 0 0 8px $color-brand-accent;
@@ -124,7 +129,7 @@ a {
 .section {
 	width: 100%;
 	padding: $space-600 0;
-
+	
 	@media(min-width: $breakpoint-lg) {
 		& { padding: $space-1000 0; }
 	}
@@ -134,9 +139,9 @@ a {
 	display: flex;
 	flex-direction: column;
 	gap: $space-500;
-
+	
 	.col {flex: 1;}
-
+	
 	@media(min-width: $breakpoint-lg) {
 		& { flex-direction: row; }
 	}
@@ -151,7 +156,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	gap: $space-500;
-
+	
 	@media(min-width: $breakpoint-lg) {
 		& {
 			display: grid;
@@ -170,7 +175,7 @@ main {
 .content_group {
 	padding: $space-500 0;
 	border-top: $border-width solid $color-brand-dark-lighter;
-
+	
 	.heading_group {
 		display: flex;
 		flex-direction: column;
@@ -181,12 +186,12 @@ main {
 .paragraph_group {
 	display: flex;
 	gap: $space-200;
-
+	
 	&.-horizontal {
 		flex-direction: column;
-
+		
 		p {flex: 1;}
-
+		
 		@media(min-width: $breakpoint-lg) {
 			& {
 				flex-direction: row;
@@ -209,14 +214,14 @@ main {
 		duration: $transition-duration-fast;
 		timing-function: $transition-timing-function;
 	}
-
+	
 	&.-primary {
 		padding: $space-200 $space-300;
 		color: $color-neutral-100;
 		background-color: $color-brand-accent;
 		border: none;
 		border-radius: $border-radius-max;
-
+		
 		&:hover {
 			background-color: darken($color-brand-accent, 8%);
 		}
@@ -231,7 +236,7 @@ main {
 		background-color: transparent;
 		border: $border-width solid $color-brand-dark-lighter;
 		border-radius: $border-radius-lg;
-
+		
 		&:hover {
 			border: $border-width solid $color-neutral-100;
 		}
@@ -240,7 +245,7 @@ main {
 			box-shadow: 0 0 0 6px $color-brand-accent;
 		}
 	}
-
+	
 	span {
 		font-family: $typeface-family-heading;
 		font-weight: $typeface-weight-normal;
@@ -250,7 +255,7 @@ main {
 		margin: 0;
 		padding: 0;
 	}
-
+	
 	i {
 		display: flex;
 		align-items: center;
@@ -283,7 +288,7 @@ main {
 .-vertical {flex-direction: column;}
 .-horizontal {
 	flex-direction: column;
-
+	
 	@media(min-width: $breakpoint-lg) {
 		& {flex-direction: row;}
 	}

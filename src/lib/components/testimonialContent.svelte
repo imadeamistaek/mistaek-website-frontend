@@ -8,7 +8,7 @@
 <div class="testimonial_content">
 	<img src={photo} alt={altText} class="testimonial-photo" />
 	<p class="body_text -small -subtle">{name}</p>
-	<p class="body_text -medium">"{quote}"</p>
+	<p class="body_text -large">"{quote}"</p>
 </div>
 
 <style lang="scss">

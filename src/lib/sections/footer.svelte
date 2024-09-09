@@ -29,6 +29,11 @@
 <style lang="scss">
 	footer {
 		padding: $space-1000 0;
+		background: {
+			image: url('/background-grid-top.png');
+			repeat: no-repeat;
+			position: 100% -144%;
+		}
 
 		.row {
 			display: flex;
@@ -53,7 +58,6 @@
 				justify-content: center;
 				align-items: center;
 				padding: $space-300 0;
-				border-top: $border-width solid $color-brand-dark-lighter;
 			}
 
 			@media(min-width: $breakpoint-lg) {

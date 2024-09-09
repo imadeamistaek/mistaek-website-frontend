@@ -14,7 +14,7 @@
 
 <!-- svelte-ignore a11y-invalid-attribute -->
 <a class="primary" href="#" on:click|preventDefault={handleEmailClick} role="button" rel="noopener noreferrer" aria-label="Let's Build Together">
-	<p class="body_text -micro -primary">Let's Build Together</p>
+	<p class="body_text -small -primary">Let's Build Together</p>
 </a>
 
 <style lang="scss">

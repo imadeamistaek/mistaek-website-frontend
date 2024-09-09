@@ -12,10 +12,10 @@
 			<header class="heading_group">
 				<h4 id="problem_heading">Struggling to turn your vision into a clear, impactful brand?</h4>
 				<div class="paragraph_group -vertical">
-					<p class="body_text -medium -subtle">
+					<p class="body_text -large -subtle">
 						Many startups face the challenge of translating their innovative ideas into a cohesive brand that resonates with their audience.
 					</p>
-					<p class="body_text -medium -subtle">
+					<p class="body_text -large -subtle">
 						Whether it’s ensuring consistency across digital platforms, creating user-friendly designs, or telling a compelling story, the process can feel overwhelming. That's where I come in.
 					</p>
 				</div>
@@ -30,10 +30,10 @@
 			<header class="heading_group">
 				<h4 id="solution_heading">A streamlined and accessible approach to design</h4>
 				<div class="paragraph_group -horizontal">
-					<p class="body_text -medium -subtle">
+					<p class="body_text -large -subtle">
 						I specialise in creating design systems, UX/UI, product design, branding, and web design that are not just visually stunning but also accessible and easy to understand.
 					</p>
-					<p class="body_text -medium -subtle">
+					<p class="body_text -large -subtle">
 						My process simplifies the complex, ensuring your brand’s digital presence is cohesive and user-friendly. By embracing mistakes as opportunities for innovation, I turn challenges into solutions that work for you.
 					</p>
 				</div>
@@ -63,5 +63,6 @@
 			}
 		}
 	}
+	.problem_solution {padding-top: 0;}
 	
 </style>

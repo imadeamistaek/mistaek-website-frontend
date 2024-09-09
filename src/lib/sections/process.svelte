@@ -9,7 +9,7 @@
 			
 			
 			<div class="col content_group -borderless">
-				<SectionIdentifier letter="C" label="My 3-Step Process to Success"/>
+				<SectionIdentifier letter="D" label="My 3-Step Process to Success"/>
 				<header class="heading_group">
 					<p class="body_text -large">Struggling to turn your vision into a clear, impactful brand?</p>
 					<h4>I believe in making things simple and straightforward, ensuring we’re always on the same page.</h4>

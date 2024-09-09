@@ -6,8 +6,8 @@
 
 <article class="numbered_content" aria-labelledby="item-{identifier}">
 	<p class="body_text -subtle -nano">{identifier}</p>	
-	<p class="body_text -medium">{heading}</p>
-	<p class="body_text -subtle -small">{description}</p>
+	<p class="body_text -large">{heading}</p>
+	<p class="body_text -subtle -medium">{description}</p>
 </article>
 
 <style lang="scss">

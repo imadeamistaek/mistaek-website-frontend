@@ -11,6 +11,7 @@
     import Services from '../lib/sections/services.svelte';
     import TrustedBy from '../lib/sections/trustedBy.svelte';
     import Mistaek from '../lib/sections/mistaek.svelte';
+    import CallToAction from '../lib/sections/callToAction.svelte';
 </script>
 
 <ActionBarTop />
@@ -22,9 +23,10 @@
 	
 	<!-- Sections for content -->
 	 <ProblemSolution />
+	 <Services />
+	 <CallToAction />
 	 <Process />
 	 <WhyChooseMe />
-	 <Services />
 	 <TrustedBy />
 	 <!-- <Mistaek /> -->
 	
