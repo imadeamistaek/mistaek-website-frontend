@@ -6,11 +6,11 @@
 	<div class="container">
 		
 		<div class="slot -left">
-			<p class="body_text -small">Working remotely from Setúbal, PT (GMT+1)</p>
+			<p class="body_text -micro">Working remotely from Setúbal, PT (GMT+1)</p>
 		</div>
 	
 		<div class="slot -right">
-			<p class="body_text -small">Available for new projects</p>
+			<p class="body_text -micro">Available for new projects</p>
 			<LinkEmail />
 		</div>
 
