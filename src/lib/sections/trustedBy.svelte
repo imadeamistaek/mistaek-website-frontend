@@ -66,7 +66,7 @@
 				display: inline-flex;
 				flex-wrap: wrap;
 				gap: $space-100;
-				padding-left: $space-200;
+				padding-left: $space-0;
 				list-style: none;
 				
 				li {
