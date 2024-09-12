@@ -38,7 +38,7 @@
 				position:absolute;
 				width: 100%;
 				height: $space-200;
-				background-image: url('mistake.svg');
+				background-image: url('mistake.webp');
 				bottom: 0%;
 				left: 0;
 				pointer-events: none;
