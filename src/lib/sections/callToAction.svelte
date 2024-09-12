@@ -9,10 +9,10 @@
 			<h3>Ready to <span class="highlight">elevate your brand</span> with purposeful design?</h3>
 			<div class="paragraph_group -horizontal">
 				<p class="body_text -large -subtle">
-					I help forward-thinking companies like yours create user-friendly, impactful brands that drive growth. From web design to UX/UI solutions, I’m here to bring your vision to life.
+					We help forward-thinking companies like yours create user-friendly, impactful brands that drive growth. From web design to UX/UI solutions, We're here to bring your vision to life.
 				</p>
 				<p class="body_text -large -subtle">
-					My approach is collaborative and clear. Let's discuss how my design expertise can turn your business challenges into growth opportunities.
+					Our approach is collaborative and clear. Let's discuss how our design expertise can turn your business challenges into growth opportunities.
 				</p>
 			</div>
 	

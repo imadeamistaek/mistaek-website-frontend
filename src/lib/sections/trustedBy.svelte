@@ -11,14 +11,13 @@
 				
 				<header class="heading_group">
 					<SectionIdentifier letter="F" label="Trusted by forward-thinking companies"/>
-					<h4>My clients love the clarity, creativity, and results I bring to the table.</h4>
+					<h4>Our clients love the clarity, creativity, and results we bring to the table.</h4>
 					<p class="body_text -medium -subtle">
-						Over the years, I've had the privilege of partnering with forward-thinking brands across multiple areas. Together, we've turned complex challenges into clear, impactful designs that engage audiences and deliver measurable results. Each collaboration is built on trust, creativity, and a shared vision for growth.
+						Over the years, we've had the privilege of partnering with forward-thinking brands across multiple areas. Together, we've turned complex challenges into clear, impactful designs that engage audiences and deliver measurable results. Each collaboration is built on trust, creativity, and a shared vision for growth.
 					</p>
 				</header>
 				
 				<div class="text_group -subtle">
-					<!-- <h5>Fidelidade, OK! Teleseguros, BiG, Pedigree, Whiskas, BBDO, Smart, Mercedes-Benz, C.Santos VP, Young Lions PT, ComOn, Redbull, Solinca, Jerónimo Martins, Esporão, Troia Resort, Fox, FC. Porto, CUF, FFMS, Santander, Interaction Design Foundation (IxDF)</h5> -->
 					<ul>
 						<li><h5>Fidelidade</h5></li>
 						<li><h5>OK! Teleseguros</h5></li>

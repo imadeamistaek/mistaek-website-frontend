@@ -4,7 +4,7 @@
 
 <section class="hero" aria-labelledby="hero-heading">
 	<h1>Empowering <span class="highlight">forward-thinking startups</span> with design that <span class="highlight">drives growth</span></h1>
-	<p class="body_text -large -subtle">I create user-friendly websites, impactful branding, and seamless digital experiences for tech companies in health, sustainability, and science—fostering lasting connections and business growth.</p>
+	<p class="body_text -large -subtle">We create user-friendly websites, impactful branding, and seamless digital experiences for tech companies in health, sustainability, and science—fostering lasting connections and business growth.</p>
 	<ButtonEmail />
 </section>
 
