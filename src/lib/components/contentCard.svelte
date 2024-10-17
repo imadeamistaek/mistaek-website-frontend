@@ -26,7 +26,17 @@
 		padding: $space-400 $space-300;
 		border: $border-width solid $color-brand-dark-lighter;
 		border-radius: $border-radius-xlg;
+		text-align: left;
+		transition: {
+			property: border;
+			duration: $transition-duration-fast;
+			timing-function: $transition-timing-function;
+		}
 
 		p.number,.icon {margin-bottom: $space-400;}
+
+		&:hover {
+			border-color: lighten($color-brand-dark-lighter, 8%);
+		}
 	}
 </style>

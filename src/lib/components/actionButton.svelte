@@ -1,14 +1,15 @@
 <script>
-	export let label = ''; // Default label
-	export let icon = '';
-	export let customClass = '';
+	export let label; // Default label
+	export let customClass;
+	export let anchor = null; // Optional prop for the anchor link
 </script>
 
+{#if anchor}
+<a href={anchor} class={`action ${customClass}`}>
+	<span>{label}</span>
+</a>
+{:else}
 <button class={`action ${customClass}`} aria-label="{label}">
-	{#if label}
-		<span>{label}</span>
-	{/if}
-	<i class="icon" aria-hidden="true">
-		<img src={`mi-${icon}.webp`} alt="arrow-out">
-	</i>
+	<span>{label}</span>
 </button>
+{/if}

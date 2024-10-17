@@ -1,5 +1,5 @@
 .action {
-	display: flex;
+	display: inline-flex;
 	align-items: center;
 	padding: $space-200 $space-300;
 	color: $color-neutral-100;
@@ -42,7 +42,7 @@
 	}
 	&.-outline {
 		background-color: transparent;
-		border: $border-width solid $color-transparency-on-dark;;
+		border: $border-width solid $color-transparency-on-dark;
 		
 		&:hover {
 			border: $border-width solid $color-neutral-100;

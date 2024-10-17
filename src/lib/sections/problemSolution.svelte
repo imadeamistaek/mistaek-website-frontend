@@ -1,6 +1,6 @@
 <script>
 	import SectionIdentifier from "../components/sectionIdentifier.svelte";
-	import TestimonialContent from "../components/testimonialContent.svelte";
+    import ServicesCard from "../components/servicesCard.svelte";
 </script>
 
 <section class="section problem_solution" aria-labelledby="problem-solution-heading">

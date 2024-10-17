@@ -12,6 +12,11 @@
     import TrustedBy from '../lib/sections/trustedBy.svelte';
     import Mistaek from '../lib/sections/mistaek.svelte';
     import CallToAction from '../lib/sections/callToAction.svelte';
+    import Problem from '../lib/sections/problem.svelte';
+    import Solution from '../lib/sections/solution.svelte';
+    import WhyChooseUs from '../lib/sections/whyChooseUs.svelte';
+    import Brands from '../lib/sections/brands.svelte';
+    import Pricing from '../lib/sections/pricing.svelte';
 </script>
 
 <NavigationBarTop />
@@ -22,13 +27,12 @@
 	<Hero />
 	
 	<!-- Sections for content -->
-	 <ProblemSolution />
-	 <Services />
-	 <CallToAction />
+	 <Problem/>
+	 <Solution/>
+	 <WhyChooseUs/>
 	 <Process />
-	 <WhyChooseMe />
-	 <TrustedBy />
-	 <!-- <Mistaek /> -->
+	 <Brands />
+	 <Pricing />
 	
 </main>
 

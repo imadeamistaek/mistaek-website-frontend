@@ -1,15 +1,15 @@
 <script>
 	import { fade } from "svelte/transition";
 	import { onMount } from "svelte";
-
+	
 	import ActionLink from "./actionLink.svelte";
 	import MenuButton from "./menuButton.svelte";
-
+	
 	let hasBlur = false;
 	const handleScroll = () => {
 		window.scrollY > 10 ? hasBlur = true : hasBlur = false;
 	};
-
+	
 	onMount(() => {
 		window.addEventListener('scroll', handleScroll);
 		return () => {
@@ -102,6 +102,10 @@
 			margin: 0 auto;
 			z-index: $zindex-fixed;
 			box-sizing: border-box;
+
+			@media(min-width: $breakpoint-xl) {
+				& {padding: $space-200 0;}
+			}
 			
 			&::before {
 				content: '';

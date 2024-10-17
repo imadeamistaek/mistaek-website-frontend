@@ -1,16 +1,16 @@
 <script>
-	import ButtonEmail from '../components/buttonEmail.svelte';
-    import FooterAside from '../components/footerAside.svelte';
+    import ActionLink from "../components/actionLink.svelte";
+	import FooterAside from '../components/footerAside.svelte';
 </script>
 
 <footer>
 	<div class="row">
 		
 		<main>
-			<h3>Ready to create <span class="highlight">something amazing</span>?</h3>
-			<p class="body_text -large -subtle">Let’s work together to build a brand that stands out, drives growth, and inspires change. Send us a message, and we’ll get back to you as soon as possible.</p>
+			<h3 class="col-6">Ready to create <span class="highlight">something amazing</span>?</h3>
+			<p class="body_text -large -subtle col-4">Let’s connect. Book a free introductory call with us and start your journey toward a clear, user-friendly design that makes a difference.</p>
 	
-			<ButtonEmail />
+			<ActionLink url="https://cal.com/mistaek/15min" customClass="action -filled" label="Book an intro call" icon="arrow-out" />
 	
 		</main>
 	
@@ -28,7 +28,7 @@
 
 <style lang="scss">
 	footer {
-		padding: $space-1000 0;
+		padding: $space-600 0;
 		background: {
 			image: url('/background-grid-top.png');
 			repeat: no-repeat;
@@ -38,16 +38,13 @@
 		.row {
 			display: flex;
 			flex-direction: column;
+			padding: 0;
 
 			main {
-				flex: 3;
+				flex: 2;
 				display: flex;
 				align-items: flex-start;
 				gap: $space-300;
-
-				> * {
-					max-width: 560px;
-				}
 			}
 			aside {
 				flex: 1;
@@ -58,6 +55,7 @@
 				justify-content: center;
 				align-items: center;
 				padding: $space-300 0;
+				text-align: center;
 			}
 
 			@media(min-width: $breakpoint-lg) {
@@ -67,7 +65,7 @@
 
 
 		@media(min-width: $breakpoint-lg) {
-			& {padding: $space-1000 0 $space-800;}
+			& {padding: $space-1000 0 0;}
 		}
 	}
 </style>

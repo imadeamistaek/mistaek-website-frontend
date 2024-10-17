@@ -26,6 +26,47 @@ body {
 	color: $color-neutral-100;
 }
 
+.col-1 {
+	width: 100%;
+	@media(min-width: $breakpoint-lg) {& { width: $col-1; }}
+}
+.col-2 {
+	width: 100%;
+	@media(min-width: $breakpoint-lg) {& { width: $col-2; }}
+}
+.col-3 {
+	width: 100%;
+	@media(min-width: $breakpoint-lg) {& { width: $col-3; }}
+}
+.col-4 {
+	width: 100%;
+	@media(min-width: $breakpoint-lg) {& { width: $col-4; }}
+}
+.col-5 {
+	width: 100%;
+	@media(min-width: $breakpoint-lg) {& { width: $col-5; }}
+}
+.col-6 {
+	width: 100%;
+	@media(min-width: $breakpoint-lg) {& { width: $col-6; }}
+}
+.col-7 {
+	width: 100%;
+	@media(min-width: $breakpoint-lg) {& { width: $col-7; }}
+}
+.col-8 {
+	width: 100%;
+	@media(min-width: $breakpoint-lg) {& { width: $col-8; }}
+}
+.col-9 {
+	width: 100%;
+	@media(min-width: $breakpoint-lg) {& { width: $col-9; }}
+}
+.col-10 {
+	width: 100%;
+	@media(min-width: $breakpoint-lg) {& { width: $col-10; }}
+}
+
 //	--------------------------------------------------
 //	Global Typography Styles
 //	--------------------------------------------------
@@ -41,15 +82,12 @@ h1,.h1, h2,.h2, h3,.h3, h4,.h4, h5,.h5, h6,.h6 {
 	}
 }
 h1, .h1 {
-	font-size: $typeface-size-heading-3;
+	font-size: $typeface-size-heading-4;
 	line-height: $typeface-line-height-display;
 	letter-spacing: $typeface-tracking-heading;
 	
 	@media(min-width: $breakpoint-lg) {
 		& { font-size: $typeface-size-heading-1; }
-	}
-	@media(max-width: $breakpoint-xs) {
-		& { font-size: $typeface-size-heading-4; }
 	}
 }
 h2, .h2 {
@@ -132,7 +170,6 @@ a {
 }
 
 .section {
-	width: 100%;
 	padding: $space-600 0;
 	
 	@media(min-width: $breakpoint-lg) {
@@ -143,9 +180,10 @@ a {
 .row {
 	display: flex;
 	flex-direction: column;
-	gap: $space-500;
+	gap: $space-300;
+	padding: $space-400 0;
 	
-	.col {flex: 1;}
+	> * {flex: 1;}
 	
 	@media(min-width: $breakpoint-lg) {
 		& { flex-direction: row; }
@@ -160,7 +198,13 @@ a {
 .grid {
 	display: flex;
 	flex-direction: column;
-	gap: $space-500;
+	gap: $space-300;
+	padding: $space-400;
+	
+	&.-three-slots {
+		grid-template-columns: repeat(2, 1fr);
+		:first-child {grid-column: 1 / -1; grid-row: 1 / -1;}
+	}
 	
 	@media(min-width: $breakpoint-lg) {
 		& {
@@ -230,6 +274,11 @@ i.icon {
 		width: 100%;
 		height: auto;
 	}
+	
+	&.-small {
+		width: $space-300;
+		height: $space-300;
+	}
 }
 
 
@@ -248,3 +297,4 @@ i.icon {
 }
 .-borderless {border: none;}
 .-no-scroll {overflow: hidden;}
+.-underline {text-decoration: underline;}
