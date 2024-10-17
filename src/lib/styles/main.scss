@@ -1,4 +1,9 @@
 /* src/lib/styles/main.scss */
 
+// MAIN STYLES
 @import 'primitives';
 @import 'global';
+
+// COMPONENT STYLES
+@import 'components/action.scss';
+@import 'components/modal.scss';

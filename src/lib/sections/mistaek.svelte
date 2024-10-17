@@ -8,7 +8,7 @@
 			
 			<div class="content_group -borderless">
 				
-				<SectionIdentifier letter="G" label="Creative Process"/>
+				<SectionIdentifier icon="pricing" label="Creative Process"/>
 				<div class="heading_group">
 					<h4>Embracing <span>mistaeks</span>, fostering innovation</h4>
 					<img class="mobile_only" src="img_orange_flowers.avif" alt="Flowers">

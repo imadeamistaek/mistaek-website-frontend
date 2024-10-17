@@ -17,14 +17,19 @@ body {
 	margin: 0 auto;
 	padding: $space-200;
 	font-family: $typeface-family-base;
-	background-color: $color-neutral-400;
+	background: {
+		image: url('/background-pattern.png');
+		color: $color-neutral-400;
+		repeat: repeat-y;
+		position: top center;
+	}
 	color: $color-neutral-100;
 }
 
 //	--------------------------------------------------
 //	Global Typography Styles
 //	--------------------------------------------------
-h1, h2, h3, h4, h5, h6 {
+h1,.h1, h2,.h2, h3,.h3, h4,.h4, h5,.h5, h6,.h6 {
 	font-family: $typeface-family-heading;
 	font-weight: $typeface-weight-normal;
 	margin: 0;
@@ -35,7 +40,7 @@ h1, h2, h3, h4, h5, h6 {
 		font-weight: $typeface-weight-bold;
 	}
 }
-h1 {
+h1, .h1 {
 	font-size: $typeface-size-heading-3;
 	line-height: $typeface-line-height-display;
 	letter-spacing: $typeface-tracking-heading;
@@ -47,7 +52,7 @@ h1 {
 		& { font-size: $typeface-size-heading-4; }
 	}
 }
-h2 {
+h2, .h2 {
 	font-size: $typeface-size-heading-4;
 	line-height: $typeface-line-height-display;
 	letter-spacing: $typeface-tracking-heading;
@@ -59,7 +64,7 @@ h2 {
 		& { font-size: $typeface-size-heading-5; }
 	}
 }
-h3 {
+h3,.h3 {
 	font-size: $typeface-size-heading-5;
 	line-height: $typeface-line-height-display;
 	letter-spacing: $typeface-tracking-heading;
@@ -71,7 +76,7 @@ h3 {
 		& { font-size: $typeface-size-heading-6; }
 	}
 }
-h4 {
+h4,.h4 {
 	font-size: $typeface-size-heading-6;
 	line-height: $typeface-line-height-heading;
 	letter-spacing: $typeface-tracking-heading;
@@ -83,12 +88,12 @@ h4 {
 		& { font-size: $typeface-size-heading-6; }
 	}
 }
-h5 {
+h5,.h5 {
 	font-size: $typeface-size-heading-5;
 	line-height: $typeface-line-height-heading;
 	letter-spacing: $typeface-tracking-heading;
 }
-h6 {
+h6,.h6 {
 	font-size: $typeface-size-heading-6;
 	line-height: $typeface-line-height-heading;
 	letter-spacing: $typeface-tracking-heading;
@@ -201,72 +206,6 @@ main {
 	}
 }
 
-.action {
-	display: flex;
-	align-items: center;
-	cursor: pointer;
-	text-align: center;
-	user-select: none;
-	text-decoration: none;
-	outline: none;
-	transition: {
-		property: background-color, border, opacity;
-		duration: $transition-duration-fast;
-		timing-function: $transition-timing-function;
-	}
-	
-	&.-primary {
-		padding: $space-200 $space-300;
-		color: $color-neutral-100;
-		background-color: $color-brand-accent;
-		border: none;
-		border-radius: $border-radius-max;
-		
-		&:hover {
-			background-color: darken($color-brand-accent, 8%);
-		}
-		&:focus-visible {
-			outline: 4px solid $color-neutral-400;
-			box-shadow: 0 0 0 8px $color-brand-accent;
-		}
-	}
-	&.-border-light {
-		padding: $space-200 $space-100;
-		color: $color-neutral-100;
-		background-color: transparent;
-		border: $border-width solid $color-brand-dark-lighter;
-		border-radius: $border-radius-lg;
-		
-		&:hover {
-			border: $border-width solid $color-neutral-100;
-		}
-		&:focus-visible {
-			outline: 3px solid $color-neutral-400;
-			box-shadow: 0 0 0 6px $color-brand-accent;
-		}
-	}
-	
-	span {
-		font-family: $typeface-family-heading;
-		font-weight: $typeface-weight-normal;
-		font-size: $typeface-size-heading-6;
-		line-height: $typeface-line-height-heading;
-		letter-spacing: $typeface-tracking-heading;
-		margin: 0;
-		padding: 0;
-	}
-	
-	i {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		width: $space-300;
-		height: $space-300;
-		margin-left: $space-100;
-
-		img {width: 100%;}
-	}
-}
 .tag {
 	display: flex;
 	align-items: center;
@@ -281,12 +220,24 @@ main {
 	border-radius: $border-radius-max;
 }
 
+i.icon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: $space-400;
+	height: $space-400;
+	img {
+		width: 100%;
+		height: auto;
+	}
+}
+
 
 //	--------------------------------------------------
 //	UTILITIES Styles
 //	--------------------------------------------------
 .-subtle {color:$color-neutral-300;}
-.-primary {color:$color-brand-accent;}
+.-filled {color:$color-brand-accent;}
 .-vertical {flex-direction: column;}
 .-horizontal {
 	flex-direction: column;
@@ -296,3 +247,4 @@ main {
 	}
 }
 .-borderless {border: none;}
+.-no-scroll {overflow: hidden;}

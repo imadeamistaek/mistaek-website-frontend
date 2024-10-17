@@ -1,5 +1,6 @@
 <script>
-	import SectionIdentifier from "../components/sectionIdentifier.svelte";	
+	import SectionIdentifier from "../components/sectionIdentifier.svelte";
+	import TestimonialContent from "../components/testimonialContent.svelte";
 </script>
 
 <section class="section problem_solution" aria-labelledby="problem-solution-heading">
@@ -7,7 +8,7 @@
 		
 		<div class="content_group">
 			
-			<SectionIdentifier letter="A" label="The Problem"/>
+			<SectionIdentifier customClass="-horizontal" icon="pricing" label="Our Unique Solution"/>
 			
 			<header class="heading_group">
 				<h4 id="problem_heading">Struggling to turn your vision into a clear, impactful brand?</h4>
@@ -25,7 +26,7 @@
 		
 		<div class="content_group">
 			
-			<SectionIdentifier letter="B" label="Our Unique Solution"/>
+			<SectionIdentifier icon="pricing" label="Our Unique Solution"/>
 			
 			<header class="heading_group">
 				<h4 id="solution_heading">A streamlined and accessible approach to design</h4>

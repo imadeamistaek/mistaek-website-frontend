@@ -9,7 +9,7 @@
 		<div class="row">
 			<div class="content_group -borderless">
 				
-				<SectionIdentifier letter="E" label="Why Choose us?"/>
+				<SectionIdentifier icon="pricing" label="Why Choose us?"/>
 				<header class="heading_group">
 					<p class="body_text -large -subtle">Detail-oriented, approachable, and solution-driven</p>
 					<h4>We’re committed to delivering results that matter. With a focus on accessibility and usability, we create designs that not only look good but also work flawlessly.</h4>
@@ -94,9 +94,9 @@
 					width: 100%;
 					padding-top: 0;
 
-					.testimonials {
-						h5 {margin: $space-1000 0 $space-500;}
-					}
+					// .testimonials {
+					// 	h5 {margin: $space-1000 0 $space-500;}
+					// }
 
 					@media(min-width: $breakpoint-lg) {
 						& {width: 50%;}

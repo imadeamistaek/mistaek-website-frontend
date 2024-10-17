@@ -1,10 +1,10 @@
 <script>
 	// import ContactForm from '$lib/components/ContactForm.svelte';
 	import '$lib/styles/main.scss';
-	import ActionBarTop from '$lib/components/actionBarTop.svelte';
+	import NavigationBarTop from '$lib/components/navigationBarTop.svelte';
 	import Hero from '../lib/sections/hero.svelte';
     import ProblemSolution from '../lib/sections/problemSolution.svelte';
-	import ActionBarBottom from '../lib/components/actionBarBottom.svelte';
+	import NavigationBarBottom from '../lib/components/navigationBarBottom.svelte';
 	import Footer from '$lib/sections/footer.svelte';
     import Process from '../lib/sections/process.svelte';
     import WhyChooseMe from '../lib/sections/whyChooseMe.svelte';
@@ -14,7 +14,7 @@
     import CallToAction from '../lib/sections/callToAction.svelte';
 </script>
 
-<ActionBarTop />
+<NavigationBarTop />
 
 <main class="container">
 	
@@ -32,7 +32,7 @@
 	
 </main>
 
-<ActionBarBottom />
+<!-- <NavigationBarBottom /> -->
 
 <!-- Footer -->
 <Footer />

@@ -1,26 +1,45 @@
 <script>
-	export let letter = 'A'; // Default letter
 	export let label = 'Section Label'; // Default label
+	export let icon;
+	export let customClass;
 </script>
 
-<div class="identifier" aria-label="{label}">
-	<span class="number"><p class="body_text -nano">{letter}</p></span>
+<div class={`identifier ${customClass}`} aria-label="{label}">
+	<i class="icon" aria-hidden="true">
+		<img src={`/icons/mi-exp-${icon}.webp`} alt="{icon}">
+	</i>
 	<p class="body_text -nano">{label}</p>
 </div>
 
 <style lang="scss">
 	.identifier {
 		display: flex;
-		flex-direction: row;
 		align-items: center;
+		flex-direction: column;
 		padding-bottom: $space-500;
+		gap: $space-200;
 
-		span {
-			padding: $space-50 $space-100;
-			border-radius: $border-radius-max;
-			border: $border-width solid $color-brand-accent;
-			margin-right: $space-100;
-		}
 		p { color: $color-brand-accent; }
+
+
+		&.-horizontal {
+			flex-direction: row;
+
+			p {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				flex: 1;
+				gap: $space-200;
+
+				&::after {
+					content: '';
+					height: 1px;
+					flex: 1;
+					background-color: $color-brand-accent;
+				}
+			}
+		}
+
 	}
 </style>

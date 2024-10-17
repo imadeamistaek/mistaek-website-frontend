@@ -19,6 +19,9 @@ $color-feedback-warning: #FFB545;
 $color-feedback-success: #52CB98;
 $color-feedback-information: #5A7AF9;
 
+// Transparency
+$color-transparency-on-dark: rgba(244,244,245,0.16);
+
 // --------------------------------------------------
 // 2. Typography
 // --------------------------------------------------
@@ -57,16 +60,16 @@ $typeface-family-highlight: 'Telegraf', sans-serif;
 // Font Sizes
 $typeface-size-base: 16px;
 $typeface-size-heading-1: 5rem;
-$typeface-size-heading-2: 3.5rem;
-$typeface-size-heading-3: 3rem;
-$typeface-size-heading-4: 2.5rem;
+$typeface-size-heading-2: 4.5rem;
+$typeface-size-heading-3: 4rem;
+$typeface-size-heading-4: 3rem;
 $typeface-size-heading-5: 2rem;
 $typeface-size-heading-6: 1.5rem;
-$typeface-size-body-large: 1.125rem;
-$typeface-size-body-medium: 1rem;
-$typeface-size-body-small: 0.875rem;
-$typeface-size-body-micro: 0.75rem;
-$typeface-size-body-nano: 0.625rem;
+$typeface-size-body-large: 1.25rem;
+$typeface-size-body-medium: 1.125rem;
+$typeface-size-body-small: 1rem;
+$typeface-size-body-micro: 0.875rem;
+$typeface-size-body-nano: 0.75rem;
 
 // Font Weights
 $typeface-weight-normal: 400;
@@ -112,10 +115,10 @@ $breakpoint-xl: 1280px;
 // --------------------------------------------------
 $zindex-dropdown: 1000;
 $zindex-sticky: 1020;
-$zindex-fixed: 1030;
 $zindex-modal-backdrop: 1040;
 $zindex-modal: 1050;
 $zindex-tooltip: 1060;
+$zindex-fixed: 1080;
 
 // --------------------------------------------------
 // 6. Borders

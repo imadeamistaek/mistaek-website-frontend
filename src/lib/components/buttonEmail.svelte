@@ -30,7 +30,7 @@ Thanks,
 	}
 </script>
 
-<button class="action contact-button -primary" aria-label="Let's Build Together" on:click={handleEmailClick}>
+<button class="action contact-button -filled" aria-label="Let's Build Together" on:click={handleEmailClick}>
 	<span>Let's Build Together</span>
 	<i class="icon" aria-hidden="true">
 		<img src="mi-arrow-out.webp" alt="arrow-out">

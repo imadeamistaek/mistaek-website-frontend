@@ -10,7 +10,7 @@
 			<div class="col">
 
 				<header class="section_heading">
-					<SectionIdentifier letter="C" label="Services tailored to your needs"/>
+					<SectionIdentifier icon="pricing" label="Services tailored to your needs"/>
 					<h4>Whether you’re starting from scratch or looking to refresh your brand, we offer a range of services designed to help you succeed:</h4>
 				</header>
 

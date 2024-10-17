@@ -10,7 +10,7 @@
 			<div class="content_group -borderless -horizontal">
 				
 				<header class="heading_group">
-					<SectionIdentifier letter="F" label="Trusted by forward-thinking companies"/>
+					<SectionIdentifier icon="pricing" label="Trusted by forward-thinking companies"/>
 					<h4>Our clients love the clarity, creativity, and results we bring to the table.</h4>
 					<p class="body_text -medium -subtle">
 						Over the years, we've had the privilege of partnering with forward-thinking brands across multiple areas. Together, we've turned complex challenges into clear, impactful designs that engage audiences and deliver measurable results. Each collaboration is built on trust, creativity, and a shared vision for growth.
