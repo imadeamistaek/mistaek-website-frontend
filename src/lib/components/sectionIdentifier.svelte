@@ -1,7 +1,7 @@
 <script>
 	export let label = 'Section Label'; // Default label
 	export let icon;
-	export let customClass;
+	export let customClass = '';
 </script>
 
 <div class={`identifier ${customClass}`} aria-label="{label}">

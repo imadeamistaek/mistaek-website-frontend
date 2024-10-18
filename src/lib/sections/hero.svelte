@@ -47,7 +47,7 @@
 		
 		@media(min-width: $breakpoint-lg) {
 			& {
-				height: 100vh;
+				height: 80vh;
 				padding: 0;
 				justify-content: center;
 				text-align: left;

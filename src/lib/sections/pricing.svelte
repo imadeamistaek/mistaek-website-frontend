@@ -1,9 +1,10 @@
 <script>
+    import ProjectCard from "../components/projectCard.svelte";
 	import SectionIdentifier from "../components/sectionIdentifier.svelte";
 	import ServicesCard from "../components/servicesCard.svelte";
 </script>
 
-<section class="section pricing" aria-labelledby="problem-heading">
+<section id="pricing-section" class="section pricing" aria-labelledby="problem-heading">
 	
 	<SectionIdentifier icon="pricing" label="Explore how we can work together"/>
 	
@@ -32,11 +33,19 @@
 			items={['Everything in Standard', 'Strategic Roadmap document', 'Additional Follow-up call']}
 			/>
 	</div>
+	
+	<div class="row col-7">
+		<ProjectCard/>
+	</div>
 
 </section>
 
 <style lang="scss">
 	section.pricing {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
 		header {
 			display: flex;
 			flex-direction: column;

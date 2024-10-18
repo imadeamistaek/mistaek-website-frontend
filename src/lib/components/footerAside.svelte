@@ -37,8 +37,16 @@
 		padding: 0;
 
 		.social-links {
+			display: flex;
+			flex-direction: column;
+			gap: $space-400;
+			align-items: flex-start;
 			list-style: none;
 			padding: 0;
+
+			@media(min-width: $breakpoint-lg) {
+				& {flex-direction: row;}
+			}
 			
 			li {
 				margin: $space-100 $space-0;
@@ -79,9 +87,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: $space-100;
+		padding: 0;
 
-		.body_text.-micro {
-			margin-bottom: $space-300;
+		.body_text.-medium {
+			margin-bottom: $space-100;
 		}
 	}
 </style>

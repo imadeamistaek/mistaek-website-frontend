@@ -1,0 +1,13 @@
+.tag {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	user-select: none;
+	text-decoration: none;
+	outline: none;
+	padding: $space-100 $space-200;
+	color: $color-neutral-100;
+	background-color: transparent;
+	border: $border-width solid $color-brand-dark-lighter;
+	border-radius: $border-radius-max;
+}

@@ -39,6 +39,7 @@
 		position: relative;
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		gap: $space-400;
 		padding: $space-400 $space-300;
 		border: $border-width solid $color-brand-dark-lighter;
@@ -61,6 +62,10 @@
 			position: absolute;
 			top: $space-100;
 			right: $space-100;
+		}
+
+		&:hover {
+			border-color: lighten($color-brand-dark-lighter, 8%);
 		}
 	}
 </style>

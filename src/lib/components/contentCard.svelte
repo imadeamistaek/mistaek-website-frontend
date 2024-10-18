@@ -1,8 +1,8 @@
 <script>
 	export let heading; // Default heading
 	export let description; // Default description
-	export let icon;
-	export let number;
+	export let icon ='';
+	export let number ='';
 </script>
 
 <article class="content_card" aria-labelledby="item-{heading}">
