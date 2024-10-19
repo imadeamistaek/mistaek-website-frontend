@@ -15,7 +15,6 @@
 <style lang="scss">
 	.hero {
 		width: 100%;
-		max-width: 1120px;
 		display: flex;
 		flex-direction: column;
 		align-items: start;

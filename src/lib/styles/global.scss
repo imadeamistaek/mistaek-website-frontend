@@ -27,44 +27,44 @@ body {
 }
 
 .col-1 {
-	width: 100%;
-	@media(min-width: $breakpoint-lg) {& { width: $col-1; }}
+	width: 100% !important;
+	@media(min-width: $breakpoint-lg) {& { width: $col-1 !important; }}
 }
 .col-2 {
-	width: 100%;
-	@media(min-width: $breakpoint-lg) {& { width: $col-2; }}
+	width: 100% !important;
+	@media(min-width: $breakpoint-lg) {& { width: $col-2 !important; }}
 }
 .col-3 {
-	width: 100%;
-	@media(min-width: $breakpoint-lg) {& { width: $col-3; }}
+	width: 100% !important;
+	@media(min-width: $breakpoint-lg) {& { width: $col-3 !important; }}
 }
 .col-4 {
-	width: 100%;
-	@media(min-width: $breakpoint-lg) {& { width: $col-4; }}
+	width: 100% !important;
+	@media(min-width: $breakpoint-lg) {& { width: $col-4 !important; }}
 }
 .col-5 {
-	width: 100%;
-	@media(min-width: $breakpoint-lg) {& { width: $col-5; }}
+	width: 100% !important;
+	@media(min-width: $breakpoint-lg) {& { width: $col-5 !important; }}
 }
 .col-6 {
-	width: 100%;
-	@media(min-width: $breakpoint-lg) {& { width: $col-6; }}
+	width: 100% !important;
+	@media(min-width: $breakpoint-lg) {& { width: $col-6 !important; }}
 }
 .col-7 {
-	width: 100%;
-	@media(min-width: $breakpoint-lg) {& { width: $col-7; }}
+	width: 100% !important;
+	@media(min-width: $breakpoint-lg) {& { width: $col-7 !important; }}
 }
 .col-8 {
-	width: 100%;
-	@media(min-width: $breakpoint-lg) {& { width: $col-8; }}
+	width: 100% !important;
+	@media(min-width: $breakpoint-lg) {& { width: $col-8 !important; }}
 }
 .col-9 {
-	width: 100%;
-	@media(min-width: $breakpoint-lg) {& { width: $col-9; }}
+	width: 100% !important;
+	@media(min-width: $breakpoint-lg) {& { width: $col-9 !important; }}
 }
 .col-10 {
-	width: 100%;
-	@media(min-width: $breakpoint-lg) {& { width: $col-10; }}
+	width: 100% !important;
+	@media(min-width: $breakpoint-lg) {& { width: $col-10 !important; }}
 }
 
 //	--------------------------------------------------
@@ -173,7 +173,11 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	gap: $space-1000;
+	gap: 0;
+
+	@media(max-width: $breakpoint-xs) {
+		& {gap: $space-1000;}
+	}
 }
 
 .section {
@@ -181,6 +185,7 @@ main {
 }
 
 .row {
+	width: 100%;
 	display: flex;
 	flex-direction: column;
 	gap: $space-300;
