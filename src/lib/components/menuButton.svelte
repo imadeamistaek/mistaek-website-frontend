@@ -15,7 +15,7 @@
 
 <button class={`action ${customClass}`} on:click={handleClick}>
 	<i class="icon" aria-hidden="true">
-		<img src={`mi-${icon}.webp`} alt={icon}>
+		<img src={`/icons/mi-${icon}.webp`} alt={icon}>
 	</i>
 	{#if label}
 	<span>{label}</span>

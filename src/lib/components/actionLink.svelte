@@ -10,6 +10,6 @@
 	<span>{label}</span>
 	{/if}
 	<i class="icon" aria-hidden="true">
-		<img src={`mi-${icon}.webp`} alt="arrow-out">
+		<img src={`/icons/mi-${icon}.webp`} alt="arrow-out">
 	</i>
 </a>
