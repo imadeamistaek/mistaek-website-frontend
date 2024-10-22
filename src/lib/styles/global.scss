@@ -284,6 +284,12 @@ i.icon {
 		& {flex-direction: row;}
 	}
 }
-.-borderless {border: none;}
 .-no-scroll {overflow: hidden;}
 .-underline {text-decoration: underline;}
+
+.-no-border {
+	border: 0 !important;
+	border-radius: 0 !important;
+	border: none !important;
+}
+.-no-padding { padding: 0 !important; }

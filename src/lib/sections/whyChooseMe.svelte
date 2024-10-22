@@ -7,7 +7,7 @@
 	<div class="content">
 
 		<div class="row">
-			<div class="content_group -borderless">
+			<div class="content_group -no-border">
 				
 				<SectionIdentifier icon="pricing" label="Why Choose us?"/>
 				<header class="heading_group">
@@ -19,7 +19,7 @@
 		</div>
 
 		<div class="row">
-			<div class="content_group -borderless">
+			<div class="content_group -no-border">
 
 				<div class="paragraph_group -horizontal">
 					<p class="body_text -large -subtle">

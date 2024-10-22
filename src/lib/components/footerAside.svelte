@@ -7,7 +7,7 @@
 	];
 </script>
 
-<div class="content_group -social-media -borderless">
+<div class="content_group -social-media -no-border">
 	<p class="body_text -micro -subtle">Stay connected</p>
 	<p class="body_text -medium">Follow us on social media for insights, tips, and updates on our latest projects.</p>
 	
@@ -22,7 +22,7 @@
 	</ul>	
 </div>
 
-<div class="content_group -newsletter -borderless">
+<div class="content_group -newsletter -no-border">
 	<p class="body_text -micro -subtle">Our Newsletter</p>
 	<p class="body_text -medium">Subscribe our newsletter and explore more about our services</p>
 	<script src="https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js" data-label-1="landing_page" data-button-color="#F24F2D" data-button-text-color="#FFFFFF" data-site="https://www.blog.mistaek.com/" data-locale="en" async></script>

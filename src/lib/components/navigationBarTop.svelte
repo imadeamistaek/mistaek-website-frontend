@@ -1,4 +1,6 @@
 <script>
+	export let currentPath; // This will receive the path from layout
+
 	import { fade } from "svelte/transition";
 	import { onMount } from "svelte";
 	
@@ -24,8 +26,8 @@
 	};
 	
 	const links = [
-	// { item: '1', label: 'About', url: 'https://www.instagram.com/andresequeira__' },
-	{ item: '1', label: 'Blog', url: 'https://www.blog.mistaek.com/' }
+	{ item: '1', label: 'About', url: '/about', isExternal: false },
+	{ item: '2', label: 'Blog', url: 'https://www.blog.mistaek.com/', isExternal: true }
 	];
 	
 </script>
@@ -39,10 +41,9 @@
 		
 		<nav>
 			<ul class="navigation-links">
-				{#each links as { item, label, url }}
+				{#each links as { label, url, isExternal }}
 				<li>
-					<a href={url} target="_blank" rel="noopener noreferrer" aria-label={label}>
-						<!-- <p class="body_text -nano">( {item} )</p> -->
+					<a href={url} target={isExternal ? "_blank" : ""} rel={isExternal ? "noopener noreferrer" : ""} aria-label={label} class:active={currentPath === url}>
 						<p class="body_text -large -subtle navigation_item">{label}</p>
 					</a>
 				</li>
@@ -65,10 +66,14 @@
 <!-- Render your modal with links here -->
 <div class="modal -navigation" transition:fade>
 	<ul class="navigation-links">
-		{#each links as { item, label, url }}
 		<li>
-			<a href={url} target="_blank" rel="noopener noreferrer" aria-label={label}>
-				<!-- <p class="body_text -nano">( {item} )</p> -->
+			<a href="/" rel="noopener noreferrer" aria-label="homepage" class:active={currentPath === "/"} on:click={toggleModal}>
+				<p class="body_text -large -subtle navigation_item">Home</p>
+			</a>
+		</li>
+		{#each links as { label, url, isExternal }}
+		<li>
+			<a href={url} target={isExternal ? "_blank" : ""} rel={isExternal ? "noopener noreferrer" : ""} aria-label={label} class:active={currentPath === url} on:click={toggleModal}>
 				<p class="body_text -large -subtle navigation_item">{label}</p>
 			</a>
 		</li>
@@ -183,6 +188,16 @@
 										transform-origin: 0% 50%;
 										transform: scale3d(1, 1, 1);
 									}
+								}
+							}
+
+							&.active p {
+								color: $color-brand-accent;
+
+								&::after {
+									transform-origin: 0% 50%;
+									transform: scale3d(1, 1, 1);
+									background-color: $color-brand-accent;
 								}
 							}
 						}

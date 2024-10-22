@@ -1,13 +1,15 @@
 <script>
-	export let label = 'Section Label'; // Default label
-	export let icon;
-	export let customClass = '';
+	export let label = null; // Default label
+	export let icon = null;
+	export let customClass = null;
 </script>
 
 <div class={`identifier ${customClass}`} aria-label="{label}">
+	{#if icon}
 	<i class="icon" aria-hidden="true">
 		<img src={`/icons/mi-exp-${icon}.webp`} alt="{icon}">
 	</i>
+	{/if}
 	<p class="body_text -nano">{label}</p>
 </div>
 

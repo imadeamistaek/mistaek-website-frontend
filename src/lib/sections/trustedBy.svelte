@@ -7,7 +7,7 @@
 	<div class="content">
 		<div class="row -vertical">
 			
-			<div class="content_group -borderless -horizontal">
+			<div class="content_group -no-border -horizontal">
 				
 				<header class="heading_group">
 					<SectionIdentifier icon="pricing" label="Trusted by forward-thinking companies"/>
@@ -43,7 +43,7 @@
 				
 			</div>
 			
-			<!-- <div class="content_group -borderless">
+			<!-- <div class="content_group -no-border">
 			<ProjectCase />
 			</div> -->
 			

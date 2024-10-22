@@ -1,11 +1,13 @@
 <script>
-	export let heading; // Default heading
-	export let description; // Default description
-	export let icon ='';
-	export let number ='';
+	export let heading = null; // Default heading
+	export let description = null; // Default description
+	export let customClass = null;
+	export let icon = null;
+	export let number = null;
+	export let image = null;
 </script>
 
-<article class="content_card" aria-labelledby="item-{heading}">
+<article class={`content_card ${customClass}`} aria-labelledby="item-{heading}">
 	{#if icon}
 	<i class="icon" aria-hidden="true">
 		<img src={`/icons/mi-exp-${icon}.webp`} alt="{icon}">
@@ -13,6 +15,9 @@
 	{/if}
 	{#if number}
 	<p class="h2 number">{number}</p>
+	{/if}
+	{#if image}
+	<img src={`${image}.png`} alt="{image}" />
 	{/if}
 	<p class="body_text -medium">{heading}</p>
 	<p class="body_text -subtle -medium">{description}</p>

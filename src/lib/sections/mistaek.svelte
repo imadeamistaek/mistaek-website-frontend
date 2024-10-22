@@ -6,7 +6,7 @@
 	<div class="content">
 		<div class="row">
 			
-			<div class="content_group -borderless">
+			<div class="content_group -no-border">
 				
 				<SectionIdentifier icon="pricing" label="Creative Process"/>
 				<div class="heading_group">
@@ -20,7 +20,7 @@
 				
 			</div>
 			
-			<div class="content_group -borderless">
+			<div class="content_group -no-border">
 				<img src="img_orange_flowers.avif" alt="Flowers">
 			</div>
 			

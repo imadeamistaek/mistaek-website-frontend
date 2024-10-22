@@ -40,6 +40,10 @@
 					font-size: $typeface-size-heading-6;
 					line-height: $typeface-line-height-heading;
 				}
+
+				&.active p {
+					color: $color-brand-accent;
+				}
 			}
 			
 		}

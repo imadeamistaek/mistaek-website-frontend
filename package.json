@@ -9,7 +9,7 @@
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-vercel": "^5.4.3",
-		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/kit": "^2.7.2",
 		"@sveltejs/vite-plugin-svelte": "^3.0.0",
 		"normalize.css": "^8.0.1",
 		"sass": "^1.77.8",
