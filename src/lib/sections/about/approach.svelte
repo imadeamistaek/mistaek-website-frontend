@@ -9,7 +9,7 @@
 	<header>
 		<h4>At Mistaek, we believe that great design isn’t just about how things look, but how they work. It’s about crafting thoughtful solutions that drive growth and build connections. Simplicity and clarity are at the heart of everything we do, ensuring our work is as impactful as it is beautiful.</h4>
 		<p class="body_text -medium -subtle col-5">While I (André) personally lead every project, I collaborate with a trusted network of professionals to deliver the best results.</p>
-		<p class="body_text -medium -subtle col-5">Together, we create brands that not only stand out but resonate deeply with audiences.</p>
+		<p class="body_text -medium -subtle col-5">Together, we create brands that not only stand out but resonate deeply with audiences. You can learn more about our detailed process on the <a style="display: inline-block;" href="/" aria-label="Homepage"><p class="body_text -medium">homepage</p></a>.</p>
 	</header>
 
 	<img src="/background-grid-testimonial.png" alt="pattern" class="background" />

@@ -31,7 +31,7 @@
 <div class:-has-blur={hasBlur} class="navigation_bar -top">
 	<div class="container">
 		
-		<a href="./" rel="noopener noreferrer" aria-label="Home">
+		<a href="./" aria-label="Homepage">
 			<h6 class="brand">Mistaek</h6>
 		</a>
 		

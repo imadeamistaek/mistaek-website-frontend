@@ -71,7 +71,7 @@
 				</ul>
 			</div>
 		</div>
-		<div class="slot -right -span-2">
+		<div class="slot -right">
 			<div class="pairing -vertical">
 				<p class="body_text -nano -subtle">Our Newsletter</p>
 				<p class="body_text -micro">Subscribe my newsletter and explore more about my services</p>
@@ -81,7 +81,7 @@
 	</div>
 	
 	<div class="row -grid -bottom">
-		<div class="slot -left -span-2">
+		<div class="slot -left">
 			<div class="pairing -vertical -al">
 				<p class="body_text -nano -subtle">Working remotely from Setúbal, Portugal</p>
 				<p class="body_text -nano -subtle">Current time: {portugalTime}</p>
