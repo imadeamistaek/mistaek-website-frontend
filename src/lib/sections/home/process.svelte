@@ -1,7 +1,7 @@
 <script>
-	import SectionIdentifier from "../components/sectionIdentifier.svelte";
-	import ContentCard from "../components/contentCard.svelte";
-	import ActionLink from "../components/actionLink.svelte";
+	import SectionIdentifier from "$lib/components/sectionIdentifier.svelte";
+	import ContentCard from "$lib/components/contentCard.svelte";
+	import ActionLink from "$lib/components/actionLink.svelte";
 </script>
 
 <section class="section process" aria-labelledby="solution-heading">

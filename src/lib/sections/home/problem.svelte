@@ -1,5 +1,5 @@
 <script>
-	import SectionIdentifier from "../components/sectionIdentifier.svelte";
+	import SectionIdentifier from "$lib/components/sectionIdentifier.svelte";
 </script>
 
 <section class="section problem col-8" aria-labelledby="problem-heading">

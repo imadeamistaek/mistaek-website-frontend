@@ -1,7 +1,7 @@
 <script>
-    import ProjectCard from "../components/projectCard.svelte";
-	import SectionIdentifier from "../components/sectionIdentifier.svelte";
-	import ServicesCard from "../components/servicesCard.svelte";
+    import ProjectCard from "$lib/components/projectCard.svelte";
+	import SectionIdentifier from "$lib/components/sectionIdentifier.svelte";
+	import ServicesCard from "$lib/components/servicesCard.svelte";
 </script>
 
 <section id="pricing-section" class="section pricing" aria-labelledby="problem-heading">

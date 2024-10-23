@@ -3,6 +3,7 @@
 
 	import { fade } from "svelte/transition";
 	import { onMount } from "svelte";
+	import { links } from "$lib/utils/links";
 	
 	import ActionLink from "./actionLink.svelte";
 	import MenuButton from "./menuButton.svelte";
@@ -25,11 +26,6 @@
 		document.body.classList.toggle('-no-scroll', isModalOpen);
 	};
 	
-	const links = [
-	{ item: '1', label: 'About', url: '/about', isExternal: false },
-	{ item: '2', label: 'Blog', url: 'https://www.blog.mistaek.com/', isExternal: true }
-	];
-	
 </script>
 
 <div class:-has-blur={hasBlur} class="navigation_bar -top">
@@ -41,10 +37,10 @@
 		
 		<nav>
 			<ul class="navigation-links">
-				{#each links as { label, url, isExternal }}
+				{#each links as link}
 				<li>
-					<a href={url} target={isExternal ? "_blank" : ""} rel={isExternal ? "noopener noreferrer" : ""} aria-label={label} class:active={currentPath === url}>
-						<p class="body_text -large -subtle navigation_item">{label}</p>
+					<a href={link.url} target={link.isExternal ? "_blank" : ""} rel={link.isExternal ? "noopener noreferrer" : ""} aria-label={link.label} class:active={currentPath === link.url}>
+						<p class="body_text -large -subtle navigation_item">{link.label}</p>
 					</a>
 				</li>
 				{/each}
@@ -66,15 +62,10 @@
 <!-- Render your modal with links here -->
 <div class="modal -navigation" transition:fade>
 	<ul class="navigation-links">
+		{#each links as link}
 		<li>
-			<a href="/" rel="noopener noreferrer" aria-label="homepage" class:active={currentPath === "/"} on:click={toggleModal}>
-				<p class="body_text -large -subtle navigation_item">Home</p>
-			</a>
-		</li>
-		{#each links as { label, url, isExternal }}
-		<li>
-			<a href={url} target={isExternal ? "_blank" : ""} rel={isExternal ? "noopener noreferrer" : ""} aria-label={label} class:active={currentPath === url} on:click={toggleModal}>
-				<p class="body_text -large -subtle navigation_item">{label}</p>
+			<a href={link.url} target={link.isExternal ? "_blank" : ""} rel={link.isExternal ? "noopener noreferrer" : ""} aria-label={link.label} class:active={currentPath === link.url} on:click={toggleModal}>
+				<p class="body_text -large -subtle navigation_item">{link.label}</p>
 			</a>
 		</li>
 		{/each}
@@ -149,6 +140,10 @@
 						
 						&:first-child {
 							margin-left: 0;
+							display: none;
+							user-select: none;
+							visibility: hidden;
+							opacity: 0;
 						}
 						
 						a {

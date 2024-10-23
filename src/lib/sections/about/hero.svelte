@@ -1,4 +1,4 @@
-<section class="hero -about" aria-labelledby="hero-heading">
+<section id="hero" class="hero -about" aria-labelledby="hero-heading">
 	<h1 class="display_heading">Mistaek</h1>
 </section>
 

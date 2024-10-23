@@ -1,5 +1,5 @@
 <script>
-	import SectionIdentifier from "../components/sectionIdentifier.svelte";	
+	import SectionIdentifier from "../../components/sectionIdentifier.svelte";	
 </script>
 
 <section class="section mistaek" aria-labelledby="mistaek-heading">

@@ -1,8 +1,8 @@
 <script>
-	export let label = ''; // Default label
-	export let icon;
-	export let customClass = '';
-	export let url = '';
+	export let label = null; // Default label
+	export let icon = null;
+	export let customClass = null;
+	export let url = null;
 </script>
 
 <a href={url} class={`${customClass}`} target="_blank" rel="noopener noreferrer" aria-label={label}>
