@@ -1,5 +1,6 @@
 <script>
 	import SectionIdentifier from "$lib/components/sectionIdentifier.svelte";
+	export let buttonLabel = null; // Default label
 </script>
 
 <section class="section founder col-8" aria-labelledby="founder-section">
@@ -12,7 +13,14 @@
 	<div class="details col-5">
 		<SectionIdentifier label="Meet the founder"/>
 		<h5>I’m André, the creative force behind Mistaek, a design studio dedicated to helping tech-driven startups and companies build brands that stand out and inspire change.</h5>
+
+		{#if buttonLabel}
+		<a href="/about" class="action -outline">
+			<span>{buttonLabel}</span>
+		</a>
+		{:else}
 		<p class="body_text -medium -subtle">My passion is in helping create clear, user-friendly experiences that resonate. With over 10 years of experience in design, I’m dedicated to turning complex challenges into innovative solutions that fuel growth and inspire change.</p>
+		{/if}
 	</div>
 	
 </section>
@@ -21,6 +29,7 @@
 	section.founder {
 		display: flex;
 		flex-direction: column;
+		align-items: flex-start;
 		gap: $space-400;
 		
 		@media(min-width: $breakpoint-lg) {
@@ -49,6 +58,7 @@
 		.details {
 			display: flex;
 			flex-direction: column;
+			align-items: flex-start;
 			gap: $space-300;
 			align-self: flex-end;
 
