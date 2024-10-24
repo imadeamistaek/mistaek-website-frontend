@@ -9,7 +9,6 @@
     import Process from '$lib/sections/home/process.svelte';
     import Brands from '$lib/sections/home/brands.svelte';
     import Pricing from '$lib/sections/home/pricing.svelte';
-
 </script>
 
 <!-- Hero Section -->

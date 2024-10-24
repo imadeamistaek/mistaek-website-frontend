@@ -32,7 +32,11 @@
 	<div class="container">
 		
 		<a href="./" aria-label="Homepage">
-			<h6 class="brand">Mistaek</h6>
+			<picture>
+				<source media="(min-width:650px)" srcset="logotype_w.webp">
+				<source media="(min-width:320px)" srcset="logo.webp">
+				<img src="logotype_w.webp" alt="Mistaek">
+			</picture>
 		</a>
 		
 		<nav>
@@ -116,11 +120,14 @@
 			}
 			
 			a {
+				height: auto;
 				display: flex;
 				flex-direction: row;
 				align-items: flex-start;
 				color: $color-neutral-100;
 				text-decoration: none;
+
+				img { height: $space-500; }
 			}
 			
 			nav {
