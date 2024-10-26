@@ -6,7 +6,7 @@
 	// Define an array of social links with their labels and URLs
 	const socialLinks = [
 		{ label: 'Instagram', url: 'https://www.instagram.com/andresequeira__' },
-		{ label: 'LinkedIn', url: 'https://www.linkedin.com/in/andremsequeira/' },
+		{ label: 'LinkedIn', url: 'https://www.linkedin.com/company/mistaek-design-studio/' },
 		{ label: 'YouTube', url: 'https://www.youtube.com/@Mistaek' }
 	];
 
