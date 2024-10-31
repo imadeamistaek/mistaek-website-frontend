@@ -54,8 +54,15 @@
 			display: flex;
 			flex-direction: column;
 			gap: $space-200;
+			width: 100%;
 			
 			&.-top {gap: $space-100;}
+
+			@media(min-width: $breakpoint-xl) {
+				& {
+					width: auto;
+				}
+			}
 		}
 
 		:global(.badge) {
