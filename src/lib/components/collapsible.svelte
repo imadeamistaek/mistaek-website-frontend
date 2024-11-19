@@ -1,25 +1,44 @@
 <script>
-	// export let items = [];
 	let isOpen = false;
 	
 	function toggle() {
 		isOpen = !isOpen;
 	}
+
+	export let isStage = false;
+	export let stageIndex = '';
+	export let stageName = '';
 </script>
 
-<div class="collapsible">
+<div class="collapsible {isStage ? '-stage' : ''}">
 	
 	<button id="collapsible-title" class="heading" on:click={toggle} aria-expanded={isOpen}>
-		<p class="body_text -medium">What's included:</p>
-		
-		{#if !isOpen}
-		<i class="icon -small" aria-hidden="true">
-			<img src="/icons/mi-chevron-down.webp" alt="chevron-down">
-		</i>
+		{#if isStage}
+			<p class="body_text -subtle -nano">{stageIndex}</p>
+
+			<div class="stage_name">
+				<p class="h2">{stageName}</p>
+				{#if !isOpen}
+				<i class="icon -small" aria-hidden="true">
+					<img src="/icons/mi-chevron-down.webp" alt="chevron-down">
+				</i>
+				{:else}
+				<i class="icon -small" aria-hidden="true">
+					<img src="/icons/mi-chevron-up.webp" alt="chevron-up">
+				</i>
+				{/if}
+			</div>
 		{:else}
-		<i class="icon -small" aria-hidden="true">
-			<img src="/icons/mi-chevron-up.webp" alt="chevron-up">
-		</i>
+			<p class="body_text -medium">What's included:</p>
+			{#if !isOpen}
+			<i class="icon -small" aria-hidden="true">
+				<img src="/icons/mi-chevron-down.webp" alt="chevron-down">
+			</i>
+			{:else}
+			<i class="icon -small" aria-hidden="true">
+				<img src="/icons/mi-chevron-up.webp" alt="chevron-up">
+			</i>
+			{/if}
 		{/if}
 	</button>
 	
@@ -88,6 +107,42 @@
 			}
 			:global(.collapsible_content ul li p) {
 				flex: 1;
+			}
+		}
+
+
+		&.-stage {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: $space-200;
+
+			.heading {
+				flex: 1;
+				width: 100%;
+				flex-direction: column;
+				align-items: flex-start;
+				gap: $space-200;
+
+				.stage_name {
+					width: 100%;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					align-items: center;
+				}
+			}
+
+			.items {
+				flex: 1;
+				// max-height: 0;
+
+				&.-open {max-height: max-content;}
+			}
+
+			@media(min-width: $breakpoint-lg) {
+				& {flex-direction: row;}
 			}
 		}
 		

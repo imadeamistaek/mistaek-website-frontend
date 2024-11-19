@@ -32,6 +32,10 @@
 
 <style lang="scss">
 	section.team {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: $space-300;
 		text-align: center;
 		
 		header {

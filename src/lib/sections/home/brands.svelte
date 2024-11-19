@@ -1,6 +1,5 @@
 <section class="section brands" aria-labelledby="solution-heading">
 	
-	
 	<header>
 		<h4>Our clients love the clarity, creativity and</h4>
 		<h4>results we bring to the table.</h4>
@@ -30,6 +29,10 @@
 
 <style lang="scss">
 	section.brands {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: $space-400;
 		text-align: center;
 		
 		header {

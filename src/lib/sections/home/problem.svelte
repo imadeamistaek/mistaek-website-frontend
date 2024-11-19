@@ -16,6 +16,10 @@
 
 <style lang="scss">
 	section.problem {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: $space-400;
 		header {
 			display: flex;
 			flex-direction: column;

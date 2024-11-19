@@ -14,7 +14,7 @@
 <article class="service_card">
 	<div class="slot -top">
 		{#if hasBadge}
-		<Badge />
+		<Badge customClass="-default" label="Best Option" />
 		{/if}
 		<p class="h6">{name}</p>
 		<p class="body_text -small -subtle">{description}</p>

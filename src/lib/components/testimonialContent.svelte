@@ -1,16 +1,29 @@
 <script>
 	export let photo = ''; // URL or path to the photo
 	export let altText = 'Testimonial photo'; // Alt text for the image
-	export let name = 'name'; // Default name
-	export let quote = 'quote'; // Default quote
+	export let label = 'label'; // Default label
+	export let quote = []; // Array of strings
+	export let link = 'link'; // Default link
+	export let linkLabel = 'linkLabel'; // Default linkLabel
 </script>
 
-<div class="testimonial_content">
-	<p class="h6">"{quote}"</p>
+<div class="testimonial_content col-8">
+	<div class="quote">
+		{#each quote as paragraph, index}
+			<p class="h6">
+				{paragraph}
+			</p>
+		{/each}
+	</div>
 
 	<div class="author">
 		<img src={photo} alt={altText} class="testimonial-photo" />
-		<p class="body_text -micro -subtle">{name}</p>
+		<p class="body_text -micro -subtle">
+			{label}
+			<a href={link} target="_blank" rel="noopener noreferrer" aria-label={link}>
+				<p class="body_text -micro navigation_item">{linkLabel}</p>
+			</a>
+		</p>
 	</div>
 </div>
 
@@ -21,17 +34,21 @@
 		align-items: center;
 		justify-content: center;
 		gap: $space-300;
-		padding: $space-1000 160px;
+		padding: $space-max 0;
 		background: {
 			image: url('/background-grid-testimonial.png');
 			repeat: no-repeat;
 			position: center;
-			size: cover;
+			size: 140%;
 		}
 
-		p.h6 {
-			text-align: center;
+		.quote {
+			p.h6 { text-align: center; margin-bottom: $space-300; }
+
+			p:first-child::before { content: '" '; }
+			p:last-child::after { content: '" '; }
 		}
+
 
 		.author {
 			display: flex;
@@ -48,6 +65,8 @@
 				border: $border-width solid $color-brand-dark-lighter;
 				border-radius: $border-radius-max;
 			}
+
+			p a {display: inline-block;}
 		}
 			
 	}

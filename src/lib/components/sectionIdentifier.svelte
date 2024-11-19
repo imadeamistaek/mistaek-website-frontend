@@ -18,7 +18,7 @@
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		padding-bottom: $space-500;
+		// padding-bottom: $space-500;
 		gap: $space-200;
 
 		p { color: $color-brand-accent; }
@@ -26,6 +26,7 @@
 
 		&.-horizontal {
 			flex-direction: row;
+			width: 100%;
 
 			p {
 				display: flex;

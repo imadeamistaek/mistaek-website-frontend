@@ -27,6 +27,10 @@
 
 <style lang="scss">
 	section.solution {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: $space-400;
 		text-align: center;
 		
 		header {

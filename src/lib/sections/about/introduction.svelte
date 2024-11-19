@@ -23,6 +23,7 @@
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		gap: $space-400;
 
 		@media(min-width: $breakpoint-lg) {
 			& { align-items: center; }

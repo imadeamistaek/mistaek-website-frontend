@@ -1,19 +1,26 @@
 <script>
-	import ActionLink from "./actionLink.svelte";
+	export let heading = ''; //default heading for the card
+	export let description = []; // Array of strings
 </script>
 
-<article class="project_card">
+<article class="patterned_card">
 	<div class="slot -top">
-		<p class="h6">Already have a project in the works?</p>
-		<p class="body_text -small">Whether it’s a brand refresh, website redesign, or specific design tasks, we’ll collaborate closely to take your project to the next level. Let’s refine your vision and make sure everything aligns with your brand’s goals.</p>
+		<p class="body_text -large">{heading}</p>
+		<div class="paragraph">
+			{#each description as paragraph, index}
+				<p class="body_text -small -subtle">
+					{paragraph}
+				</p>
+			{/each}
+		</div>
 	</div>
 	<div class="slot -middle">
-		<ActionLink url="https://cal.com/mistaek/15min" customClass="action -outline" label="Book a call" icon="arrow-out" />
+		<slot />
 	</div>
 </article>
 
 <style lang="scss">
-	.project_card {
+	.patterned_card {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
@@ -44,8 +51,10 @@
 			padding: 0;
 			
 			&.-top {gap: $space-100;}
-			
-			p.h6 {color: $color-brand-accent;}
+
+			.paragraph {
+				p:not(:last-child) { margin-bottom: $space-200; }
+			}
 			
 			@media(min-width: $breakpoint-lg) {
 				& {padding: 0 $space-600;}
