@@ -34,6 +34,17 @@
 	linkLabel="The Eggwhite"
 />
 <WhyChooseUs/>
+<TestimonialContent
+	quote={[
+		"I had the privilege of working alongside André in the past and, more recently, the opportunity to collaborate with him as a partner on a project to create a new brand, including the entire process of developing its identity and graphic image.",
+		"André consistently demonstrates exceptional dedication, passion, and quality in his work. He seamlessly blends creative and artistic expertise with technical proficiency, embodying the rare combination of a skilled designer and a capable developer. Whether crafting innovative designs or implementing technical solutions, André’s talent and commitment shine through.",
+		"I highly recommend André to anyone seeking a professional with a unique mix of creativity and technical know-how.",
+	]}
+	photo="/testimonials/carlosquadrado.jpeg"
+	label="Carlos Quadrado, Data Lead at"
+	link="https://comon.pt/"
+	linkLabel="COMON"
+/>
 <Founder buttonLabel="Know more about me"/>
 <Process />
 <Brands />
