@@ -22,14 +22,7 @@
 	{/if}
 </button>
 
-<style lang="scss">
-	button {
-		display: flex;
-
-		@media(min-width: $breakpoint-xl) {
-			& {
-				display: none;
-			}
-		}
-	}
+<style>
+	button {	display: flex;	}
+	@media (min-width: 992px) {	button {	display: none;	}	}
 </style>

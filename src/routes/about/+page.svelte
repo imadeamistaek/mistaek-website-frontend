@@ -3,7 +3,7 @@
 </svelte:head>
 
 <script>
-	import '$lib/styles/main.scss';
+	// import '$lib/styles/main.scss';
 	import Hero from '$lib/sections/about/hero.svelte';
 	import Introduction from '$lib/sections/about/introduction.svelte';
 	import Founder from '$lib/sections/about/founder.svelte';

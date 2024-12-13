@@ -1,0 +1,55 @@
+/* ---------------------------------------------------------------------------------------------------- */
+/* Modal */
+/*
+/* All the styles necessary to style the basic Modal component
+/* ---------------------------------------------------------------------------------------------------- */
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	background-color: var(--color-neutral-400);
+	color: var(--color-neutral-100);
+	z-index: var(--zindex-modal-backdrop);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Navigational Links within Modals */
+/* ---------------------------------------------------------------------------------------------------- */
+.modal .navigation-links {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: var(--space-400);
+	list-style: none;
+	padding: 0;
+}
+.modal .navigation-links li { display: flex; }
+.modal .navigation-links li a {
+	color: var(--color-neutral-100);
+	text-decoration: none;
+}
+.modal .navigation-links li a p {
+	position: relative;
+	white-space: nowrap;
+	transition-property: color;
+	transition-duration: var(--transition-duration-fast);
+	transition-timing-function: var(--transition-timing-function);
+	font-size: var(--typeface-size-heading-6);
+	line-height: var(--typeface-line-height-heading);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* States */
+/* ---------------------------------------------------------------------------------------------------- */
+.modal .navigation-links li a.active p {
+	color: var(--color-brand-accent);
+}

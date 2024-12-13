@@ -23,19 +23,7 @@
 	
 </section>
 
-<style lang="scss">
-	section.process {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: $space-400;
-		text-align: center;
-		
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: $space-50;
-			align-items: center;
-		}
-	}
+<style>
+	section.process { align-items: center; text-align: center; }
+	section.process header { gap: var(--space-50); }
 </style>

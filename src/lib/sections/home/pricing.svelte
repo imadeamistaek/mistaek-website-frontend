@@ -49,19 +49,7 @@
 
 </section>
 
-<style lang="scss">
-	section.pricing {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: $space-400;
-
-		header {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: $space-400;
-			text-align: center;
-		}
-	}
+<style>
+	section.pricing { align-items: center; }
+	section.pricing header { text-align: center; }
 </style>

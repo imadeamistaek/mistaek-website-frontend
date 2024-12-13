@@ -1,0 +1,133 @@
+/* ---------------------------------------------------------------------------------------------------- */
+/* BADGE */
+/*
+/* All the styles necessary to style the badge component
+/* ---------------------------------------------------------------------------------------------------- */
+/* Overrides for Brand Colours in RGB Values */
+/* Important note here is that it's only the values, not the real rgb code */
+:root {
+	--rgb-brand-dark: 22, 22, 29;
+	--rgb-brand-dark-lighter: 42, 42, 50;
+	--rgb-brand-accent: 242, 79, 45;
+	--rgb-brand-detail: 212, 207, 196;
+	--rgb-brand-tangerine: 251, 146, 75;
+	--rgb-brand-turquoise: 24, 220, 194;
+	--rgb-brand-chrysler: 50, 24, 220;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* BADGE */
+/*
+/* All the styles necessary to style the badge component
+/* ---------------------------------------------------------------------------------------------------- */
+.badge {
+	display: inline-block;
+	border-radius: var(--border-radius-md);
+	padding: var(--space-50) var(--space-100);
+}
+.badge p::before {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	-moz-border-radius: var(--border-radius-md);
+	-webkit-border-radius: var(--border-radius-md);
+	border-radius: var(--border-radius-md);
+	background-color: var(--color-brand-accent);
+	margin-right: var(--space-100);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* DEFAULT Variant */
+/*
+/* Used on everything that needs a tag.
+/* If there is no specific variant that needs to be used
+/* eg: services card
+/* ---------------------------------------------------------------------------------------------------- */
+.badge.-default {
+	background-color: rgba(var(--rgb-brand-accent), 0.16);
+}
+.badge.-default p {
+	color: var(--color-brand-accent);
+}
+.badge.-default p::before {
+	background-color: var(--color-brand-accent);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* PLANNED/VALIDATION Variant */
+/*
+/* Used in tasks when they are "yellow"
+/* ---------------------------------------------------------------------------------------------------- */
+.badge.-planned,
+.badge.-validation {
+	background-color: rgba(var(--rgb-brand-tangerine), 0.16);
+}
+.badge.-planned p,
+.badge.-validation p {
+	color: var(--color-brand-tangerine);
+}
+.badge.-planned p::before,
+.badge.-validation p::before {
+	background-color: var(--color-brand-tangerine);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* DONE Variant */
+/*
+/* Used in tasks when they are "green"
+/* ---------------------------------------------------------------------------------------------------- */
+.badge.-done {
+	background-color: rgba(var(--rgb-brand-turquoise), 0.16);
+}
+.badge.-done p {
+	color: var(--color-brand-turquoise);
+}
+.badge.-done p::before {
+	background-color: var(--color-brand-turquoise);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* PROGRESS Variant */
+/*
+/* Used in tasks when they are "blue"
+/* ---------------------------------------------------------------------------------------------------- */
+.badge.-progress {
+	background-color: var(--color-brand-chrysler);
+}
+.badge.-progress p {
+	color: var(--color-neutral-100);
+}
+.badge.-progress p::before {
+	background-color: var(--color-neutral-100);
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* OUTLINE Variant */
+/*
+/* Used in tasks when they are "extra"
+/* ---------------------------------------------------------------------------------------------------- */
+.badge.-outline {
+	background-color: transparent;
+	border: var(--border-width) solid var(--color-transparency-on-dark);
+}
+.badge.-outline p {
+	color: var(--color-neutral-300);
+}
+.badge.-outline p::before {
+	display: none;
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* SUBTLE Variant */
+/* ---------------------------------------------------------------------------------------------------- */
+.badge.-subtle {
+	background-color: var(--color-transparency-on-dark);
+	border: none;
+}
+.badge.-subtle p {
+	color: var(--color-neutral-200);
+}
+.badge.-subtle p::before {
+	background-color: var(--color-neutral-200);
+}

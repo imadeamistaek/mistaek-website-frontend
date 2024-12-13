@@ -74,8 +74,9 @@
 		<div class="slot -right">
 			<div class="pairing -vertical">
 				<p class="body_text -nano -subtle">Our Newsletter</p>
-				<p class="body_text -micro">Subscribe my newsletter and explore more about my services</p>
-				<script src="https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js" data-label-1="landing_page" data-button-color="#F24F2D" data-button-text-color="#FFFFFF" data-site="https://www.blog.mistaek.com/" data-locale="en" async></script>
+				<p class="body_text -micro">Subscribe our newsletter and explore more about our services</p>
+				<!-- <script src="https://cdn.jsdelivr.net/ghost/signup-form@~0.1/umd/signup-form.min.js" data-label-1="landing_page" data-button-color="#F24F2D" data-button-text-color="#FFFFFF" data-site="https://www.blog.mistaek.com/" data-locale="en" async></script> -->
+				<iframe title="beehiv-submit" src="https://embeds.beehiiv.com/f43b562c-d2a8-470f-aa76-89c70ce2417d?slim=true" data-test-id="beehiiv-embed" height="52" frameborder="0" scrolling="no" style="width: 100%; margin: 0; border-radius: 0px !important; background-color: transparent; margin-top: 16px;"></iframe>
 			</div>
 		</div>
 	</div>
@@ -102,99 +103,3 @@
 		</div>
 	</div>
 </footer>
-
-<style lang="scss">
-	footer {
-		display: flex;
-		flex-direction: column;
-		gap: $space-500;
-		padding: $space-600 0;
-		background: {
-			image: url('/background-grid-top.png');
-			repeat: no-repeat;
-			position: 100% -144%;
-		}
-		border-top: $border-width solid $color-brand-dark-lighter;
-		
-		.row {
-			display: flex;
-			flex-direction: column;
-			padding: 0;
-
-			@media(min-width: $breakpoint-lg) {
-				& {flex-direction: row;}
-			}
-
-			.slot {
-				width: 100%;
-				display: flex;
-				flex-direction: column;
-				align-items: flex-start;
-				gap: $space-400;
-
-				.pairing { width: 100%;}
-
-				&.-center {
-					flex-direction: column;
-
-					@media(min-width: $breakpoint-lg) {
-						& {flex-direction: row;}
-					}
-				}
-			}
-
-			&.-center {
-				.slot:last-child {
-					grid-column: span 2;
-					p.-micro { padding: $space-100 0; margin: $space-100 0; }
-				}
-			}
-			
-			&.-bottom {
-				padding: 0 0 $space-200 0;
-
-				.slot {
-					width: 100%;
-					display: flex;
-					flex-direction: row;
-					align-items: center;
-					gap: $space-400;
-
-					&:first-child { grid-column: span 2;}
-
-					&.-center {
-						justify-content: flex-start;
-					}
-					&.-right {
-						width: 100%;
-						justify-content: space-between;
-
-						@media(min-width: $breakpoint-lg) {
-							& {justify-content: flex-end;}
-						}
-					}
-				}
-			}
-
-			&.-grid {
-				grid-template-columns: 1fr;
-
-				@media(min-width: $breakpoint-lg) {
-					& {
-						display: grid;
-						grid-template-columns: repeat(4, 1fr);
-						gap: $space-400;
-					}
-				}
-
-				.slot { grid-column: span 1;}
-			}
-
-		}
-		
-		
-		@media(min-width: $breakpoint-lg) {
-			& {padding: $space-1000 0 0;}
-		}
-	}
-</style>

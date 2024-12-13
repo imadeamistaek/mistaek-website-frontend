@@ -27,35 +27,20 @@
 	
 </section>
 
-<style lang="scss">
-	section.brands {
+<style>
+	section.brands { align-items: center; text-align: center; }
+	section.brands header { gap: var(--space-50); }
+	section.brands .brand_grid {
 		display: flex;
-		flex-direction: column;
+		flex-wrap: wrap;
+		gap: var(--space-400);
 		align-items: center;
-		gap: $space-400;
-		text-align: center;
-		
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: $space-50;
-			align-items: center;
-		}
-		
-		.brand_grid {
-			display: flex;
-			flex-wrap: wrap;
-			gap: $space-400;
-			align-items: center;
-			justify-content: center;
-			padding: $space-600 0;
-			opacity: 0.32;
-			
-			img {
-				height: 24px;
-				object-fit: cover;
-			}
-		} 
-		
+		justify-content: center;
+		padding: var(--space-600) 0;
+		opacity: 0.32;
+	}
+	section.brands .brand_grid img {
+		height: 24px;
+		object-fit: cover;
 	}
 </style>

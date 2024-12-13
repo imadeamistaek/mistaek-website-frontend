@@ -18,36 +18,14 @@
 
 </section>
 
-<style lang="scss">
-	section.introduction {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: $space-400;
+<style>
+	section.introduction { align-items: flex-start; }
+	section.introduction header { text-align: left; }
+	section.introduction .paragraph_group { padding-top: var(--space-400); align-self: flex-end; }
 
-		@media(min-width: $breakpoint-lg) {
-			& { align-items: center; }
-		}
-
-		header {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: $space-400;
-			text-align: left;
-
-			@media(min-width: $breakpoint-lg) {
-				& { text-align: center; }
-			}
-		}
-
-		.paragraph_group {
-			padding-top: $space-400;
-			align-self: flex-end;
-
-			@media(min-width: $breakpoint-lg) {
-				& { padding-top: $space-1000; }
-			}
-		}
+	@media (min-width: 992px) {
+		section.introduction { align-items: center; }
+		section.introduction header { text-align: center; }
+		section.introduction .paragraph_group { padding-top: var(--space-1000); }
 	}
 </style>

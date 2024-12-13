@@ -24,18 +24,18 @@
 	<p class="body_text -subtle -small">{description}</p>
 </div>
 
-<style lang="scss">
+<style>
 	.task {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: $space-100;
-
-		p.-nano { margin-bottom: $space-100; }
-
-		&.-done {
-			opacity: 64%;
-		}
+		gap: var(--space-100);
+	}
+	.task p.-nano {
+		margin-bottom: var(--space-100);
 	}
 
+	.task.-done {
+		opacity: 64%;
+	}
 </style>

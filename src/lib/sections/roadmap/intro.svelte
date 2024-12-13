@@ -20,31 +20,6 @@
 
 </section>
 
-<style lang="scss">
-	section.intro {
-		display: flex;
-		flex-direction: column;
-		gap: $space-400;
-
-		header {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			gap: $space-400;
-			text-align: left;
-
-			@media(min-width: $breakpoint-lg) {
-				& { text-align: left; }
-			}
-		}
-
-		.paragraph_group {
-			padding-top: $space-400;
-			align-self: flex-end;
-
-			@media(min-width: $breakpoint-lg) {
-				& { padding-top: $space-1000; }
-			}
-		}
-	}
+<style>
+	section.intro { align-items: flex-end; }
 </style>

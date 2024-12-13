@@ -27,47 +27,38 @@
 	</div>
 </div>
 
-<style lang="scss">
+<style>
 	.testimonial_content {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
-		gap: $space-300;
-		padding: $space-max 0;
-		background: {
-			image: url('/background-grid-testimonial.png');
-			repeat: no-repeat;
-			position: center;
-			size: 140%;
-		}
-
-		.quote {
-			p.h6 { text-align: center; margin-bottom: $space-300; }
-
-			p:first-child::before { content: '" '; }
-			p:last-child::after { content: '" '; }
-		}
-
-
-		.author {
-			display: flex;
-			flex-direction: row;
-			align-items: center;
-			gap: $space-200;
-			
-			img {
-				max-width: 48px;
-				max-height: 48px;
-				width: 100%;
-				display: block;
-				object-fit: cover;
-				border: $border-width solid $color-brand-dark-lighter;
-				border-radius: $border-radius-max;
-			}
-
-			p a {display: inline-block;}
-		}
-			
+		gap: var(--space-300);
+		padding: var(--space-max) 0;
+		background-image: url('/background-grid-testimonial.png');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 140%;
 	}
+
+	.testimonial_content .quote p.h6 {	text-align: center; margin-bottom: var(--space-300);}
+	.testimonial_content .quote p:first-child::before {	content: '" ';}
+	.testimonial_content .quote p:last-child::after {	content: ' "';}
+
+	.testimonial_content .author {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: var(--space-200);
+	}
+	.testimonial_content .author img {
+		max-width: 48px;
+		max-height: 48px;
+		width: 100%;
+		display: block;
+		object-fit: cover;
+		border: var(--border-width) solid var(--color-brand-dark-lighter);
+		border-radius: var(--border-radius-max);
+	}
+	.testimonial_content .author p a { display: inline-block;}
 </style>

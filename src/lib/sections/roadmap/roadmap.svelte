@@ -106,71 +106,49 @@
 
 	</div>
 
-
 </section>
 
-<style lang="scss">
-	section.roadmap {
+<style>
+	section.roadmap { align-items: center; }
+	section.roadmap header { text-align: center; }
+
+	section.roadmap .timeline {
+		width: 100%;
+		padding-top: var(--space-500);
 		display: flex;
 		flex-direction: column;
-		align-items: center;
-		gap: $space-400;
+		align-items: flex-start;
+		gap: var(--space-500);
+	}
+	section.roadmap .timeline .intro {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-200);
+		padding: var(--space-400) 0 var(--space-800);
+	}
+	section.roadmap .timeline ul li { margin-bottom: var(--space-800); }
+	section.roadmap .timeline ul li::before { display: none !important; }
 
-		header {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-		}
+	:global(.collapsible .items) {
+		position: relative;
+	}
+	:global(.collapsible .items::before) {
+		position: absolute;
+		top: -5px;
+		left: -5px;
+		content: '';
+		display: none;
+		width: var(--space-100);
+		height: var(--space-100);
+		background-color: var(--color-neutral-300);
+		border-radius: var(--border-radius-xlg);
+	}
 
-		.timeline {
-			width: 100%;
-			padding-top: $space-500;
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			gap: $space-500;
-
-			.intro {
-				display: flex;
-				flex-direction: column;
-				gap: $space-200;
-				padding: $space-400 0 $space-800;
-			}
-
-			ul li {
-				margin-bottom: $space-800;
-
-				&::before {display: none !important;}
-			}
-		}
-
+	@media (min-width: 992px) {
 		:global(.collapsible .items) {
-			position: relative;
-
-			@media(min-width: $breakpoint-lg) {
-				& {
-					padding-left: $space-400;
-					border-left: 1px dashed $color-neutral-300;
-				}
-			}
+			padding-left: var(--space-400);
+			border-left: 1px dashed var(--color-neutral-300);
 		}
-		:global(.collapsible .items::before) {
-			position: absolute;
-			top: -$space-50;
-			left: -$space-50;
-			content: '';
-			display: none;
-			width: $space-100;
-			height: $space-100;
-			background-color: $color-neutral-300;
-			border-radius: $border-radius-xlg;
-
-			@media(min-width: $breakpoint-lg) {
-				& {
-					display: block;
-				}
-			}
-		}
+		:global(.collapsible .items::before) { display: block; }
 	}
 </style>

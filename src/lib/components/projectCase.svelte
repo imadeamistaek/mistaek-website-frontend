@@ -34,7 +34,7 @@
 	</ul>
 	
 </div>
-
+<!-- 
 <style lang="scss">
 	.list.-cases {
 		flex: 1;
@@ -93,4 +93,4 @@
 			}
 		}
 	}
-</style>
+</style> -->

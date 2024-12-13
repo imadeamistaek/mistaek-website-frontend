@@ -12,47 +12,40 @@
 	</div>
 </section>
 
-<style lang="scss">
+<style>
+/* ---------------------------------------------------------------------------------------------------- */
+/* HERO */
+/* ---------------------------------------------------------------------------------------------------- */
+@media (min-width: 992px) {
 	.hero {
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: start;
-		justify-content: start;
-		padding: $space-1000 0;
-		text-align: center;
-		background: {
-			image: url('/background-grid-top.png');
-			repeat: no-repeat;
-			position: center;
-		}
-		
-		h1 { margin-bottom: $space-300; }
-		p {
-			width: 100%;
-			max-width: 640px;
-			margin-bottom: $space-600;
-			
-			.highlight {color: $color-brand-accent;}
-		}
-		
-		.action_group {
-			width: 100%;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: $space-200;
-		}
-		
-		@media(min-width: $breakpoint-lg) {
-			& {
-				height: 80vh;
-				padding: 0;
-				justify-content: center;
-				text-align: left;
-				
-				.action_group {flex-direction: row;}
-			}
-		}
+		height: 80vh;
+		padding: 0;
+		justify-content: center;
+		text-align: left;
 	}
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* HERO Children */
+/* ---------------------------------------------------------------------------------------------------- */
+.hero h1 { margin-bottom: var(--space-300);}
+.hero p { 
+	width: 100%;
+	max-width: 640px;
+	margin-bottom: var(--space-600);
+}
+.hero p .highlight { color: var(--color-brand-accent); }
+.hero .action_group {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: var(--space-200);
+}
+@media (min-width: 992px) {
+	.hero .action_group {
+		flex-direction: row;
+	}
+}
 </style>

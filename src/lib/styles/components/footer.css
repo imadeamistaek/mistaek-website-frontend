@@ -1,0 +1,119 @@
+/* ---------------------------------------------------------------------------------------------------- */
+/* Footer */
+/*
+/* All the styles necessary to style the footer component
+/* ---------------------------------------------------------------------------------------------------- */
+footer {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-500);
+	padding: var(--space-600) 0;
+	background-image: url('/background-grid-top.png');
+	background-repeat: no-repeat;
+	background-position: 100% -144%;
+	border-top: var(--border-width) solid var(--color-brand-dark-lighter);
+}
+@media (min-width: 992px) {
+	footer {
+		padding: var(--space-1000) 0 0;
+	}
+}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Footer Rows */
+/*
+/* All the styles necessary to style the rows inside the footer
+/* ---------------------------------------------------------------------------------------------------- */
+footer .row {
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+}
+footer .row.-bottom {
+	padding: 0 0 var(--space-200) 0;
+}
+footer .row.-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: var(--space-400);
+}
+
+@media (min-width: 992px) {
+	footer .row {
+		flex-direction: row;
+	}
+	footer .row.-grid {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Footer Slots */
+/*
+/* All the styles necessary to style the slots inside the footer
+/* ---------------------------------------------------------------------------------------------------- */
+footer .row .slot {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: var(--space-400);
+}
+@media (min-width: 992px) {
+	footer .row .slot.-center {
+		flex-direction: row;
+	}
+}
+
+footer .row.-bottom .slot {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: var(--space-400);
+}
+
+footer .row.-grid .slot {
+	grid-column: span 1;
+}
+footer .row.-grid.-center .slot:last-child {
+	grid-column: span 2;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Footer Inner Slots */
+/*
+/* All the styles necessary to style the inner slots inside the footer
+/* ---------------------------------------------------------------------------------------------------- */
+footer .row .slot.-center .slot:last-child {
+	grid-column: span 2;
+}
+footer .row .slot.-center .slot:last-child p.-micro {
+	padding: var(--space-100) 0;
+	margin: var(--space-100) 0;
+}
+
+footer .row.-bottom .slot:first-child {
+	grid-column: span 2;
+}
+footer .row.-bottom .slot.-center {
+	justify-content: flex-start;
+}
+footer .row.-bottom .slot.-right {
+	justify-content: space-between;
+}
+@media (min-width: 992px) {
+	footer .row.-bottom .slot.-right {
+		justify-content: flex-end;
+	}
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Footer Smaller Components */
+/*
+/* All the styles necessary to style the inner components that are very specific
+/* ---------------------------------------------------------------------------------------------------- */
+footer .row .slot .pairing { width: 100%; }

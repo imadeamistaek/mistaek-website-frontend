@@ -25,52 +25,39 @@
 	
 </section>
 
-<style lang="scss">
-	section.founder {
+<style>
+	section.founder { align-items: flex-start; }
+	@media (min-width: 992px) {
+		.founder {
+			flex-direction: row; padding: var(--space-1000) 0;
+		}
+	}
+
+	section.founder figure { margin: 0; }
+	section.founder figure img {
+		width: 100%;
+		display: block;
+		aspect-ratio: 2 / 3;
+		object-fit: cover;
+		border-radius: var(--border-radius-md);
+	}
+	
+	section.founder .details {
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: $space-400;
-		
-		@media(min-width: $breakpoint-lg) {
-			& {flex-direction: row; padding: $space-1000 0;}
+		gap: var(--space-300);
+		align-self: flex-end;
+	}
+	@media (min-width: 992px) {
+		section.founder .details {
+			margin-bottom: var(--space-200);
 		}
-		
-		figure {
-			margin: 0;
+	}
 
-			img {
-				width: 100%;
-				display: block;
-				aspect-ratio: 2 / 3;
-				object-fit: cover;
-				border-radius: $border-radius-md;
-			}
-
-			figcaption {
-				margin-top: $space-100;
-				font-size: $typeface-size-body-nano;
-				text-transform: uppercase;
-				color:$color-neutral-300;
-			}
-		}
-
-		.details {
-			display: flex;
-			flex-direction: column;
-			align-items: flex-start;
-			gap: $space-300;
-			align-self: flex-end;
-
-			@media(min-width: $breakpoint-lg) {
-				& {margin-bottom: $space-200;}
-			}
-
-			:global(.identifier) {
-				align-items: flex-start;
-				text-align: left;
-				padding: 0;
-			}
-		}
+	:global(.identifier) {
+		align-items: flex-start;
+		text-align: left;
+		padding: 0;
 	}
 </style>

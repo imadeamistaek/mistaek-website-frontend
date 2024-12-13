@@ -14,16 +14,6 @@
 
 </section>
 
-<style lang="scss">
-	section.problem {
-		display: flex;
-		flex-direction: column;
-		align-items: flex-start;
-		gap: $space-400;
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: $space-400;
-		}
-	}
+<style>
+	section.problem { align-items: flex-start; }
 </style>

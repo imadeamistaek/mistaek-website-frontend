@@ -34,45 +34,44 @@
 	</div>
 </article>
 
-<style lang="scss">
+<style>
 	.service_card {
 		position: relative;
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
-		gap: $space-400;
-		padding: $space-400 $space-300;
-		border: $border-width solid $color-brand-dark-lighter;
-		border-radius: $border-radius-xlg;
-		transition: {
-			property: border;
-			duration: $transition-duration-fast;
-			timing-function: $transition-timing-function;
-		}
-		
-		.slot {
-			display: flex;
-			flex-direction: column;
-			gap: $space-200;
-			width: 100%;
-			
-			&.-top {gap: $space-100;}
+		gap: var(--space-400);
+		padding: var(--space-400) var(--space-300);
+		border: var(--border-width) solid var(--color-brand-dark-lighter);
+		border-radius: var(--border-radius-xlg);
+		transition-property: border;
+		transition-duration: var(--transition-duration-fast);
+		transition-timing-function: var(--transition-timing-function);
+	}
+	.service_card:hover {
+		border: var(--border-width) solid var(--color-neutral-300);
+	}
 
-			@media(min-width: $breakpoint-xl) {
-				& {
-					width: auto;
-				}
-			}
-		}
+	.service_card .slot {
+		display: flex;
+		flex-direction: column;
+		gap: var(--space-200);
+		width: 100%;
+	}
 
-		:global(.badge) {
-			position: absolute;
-			top: $space-100;
-			right: $space-100;
-		}
+	.service_card .slot.-top {
+		gap: var(--space-100);
+	}
 
-		&:hover {
-			border-color: lighten($color-brand-dark-lighter, 8%);
+	@media (min-width: 992px) {
+		.service_card .slot {
+			width: auto;
 		}
+	}
+
+	:global(.service_card .badge) {
+		position: absolute;
+		top: var(--space-100);
+		right: var(--space-100);
 	}
 </style>

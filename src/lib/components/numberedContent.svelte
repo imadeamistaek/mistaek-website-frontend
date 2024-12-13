@@ -10,16 +10,15 @@
 	<p class="body_text -subtle -medium">{description}</p>
 </article>
 
-<style lang="scss">
+<style>
 	.numbered_content {
 		display: flex;
 		flex-direction: column;
-		gap: $space-100;
-		padding: $space-400 $space-300;
-		border-top: $border-width solid $color-brand-dark-lighter;
-
-		p:first-child {
-			margin-bottom: $space-400;
-		}
+		gap: var(--space-100);
+		padding: var(--space-400) var(--space-300);
+		border-top: var(--border-width) solid var(--color-brand-dark-lighter);
+	}
+	.numbered_content p:first-child {
+		margin-bottom: var(--space-400);
 	}
 </style>

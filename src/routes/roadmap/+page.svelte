@@ -3,7 +3,7 @@
 </svelte:head>
 
 <script>
-	import '$lib/styles/main.scss';
+	// import '$lib/styles/main.scss';
 	import Hero from '$lib/sections/roadmap/hero.svelte';
 	import Intro from '$lib/sections/roadmap/intro.svelte';
 	import Horizon from '$lib/sections/roadmap/horizon.svelte';

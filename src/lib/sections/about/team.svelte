@@ -30,28 +30,15 @@
 
 </section>
 
-<style lang="scss">
-	section.team {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: $space-300;
-		text-align: center;
-		
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: $space-200;
-			align-items: center;
-		}
-
-		:global(.content_card img) {
-			width: 100%;
-			display: block;
-			aspect-ratio: 3 / 2;
-			object-fit: cover;
-			border-radius: $border-radius-md;
-			margin-bottom: $space-200;
-		}
+<style>
+	section.team { align-items: center; text-align: center; }
+	section.team header { gap: var(--space-200); }
+	:global(.content_card img) {
+		width: 100%;
+		display: block;
+		aspect-ratio: 3 / 2;
+		object-fit: cover;
+		border-radius: var(--border-radius-md);
+		margin-bottom: var(--space-200);
 	}
 </style>

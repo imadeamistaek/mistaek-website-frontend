@@ -1,0 +1,120 @@
+/* ---------------------------------------------------------------------------------------------------- */
+/* Action */
+/*
+/* All the styles necessary to style the basic Action component
+/* ---------------------------------------------------------------------------------------------------- */
+/* Overrides for Brand Colours in RGB Values */
+/* Important note here is that it's only the values, not the real rgb code */
+:root {
+	--color-neutral-100: hsl(240, 5%, 96%);
+	--color-neutral-200: hsl(240, 5%, 88%);
+	--color-neutral-300: hsl(240, 4%, 56%);
+	--color-neutral-400: hsl(240, 2%, 8%);
+}
+
+/* Brand */
+:root {
+	--color-brand-dark: hsl(240, 14%, 10%);
+	--color-brand-dark-lighter: hsl(240, 9%, 18%);
+}
+
+.action {
+	display: inline-flex;
+	align-items: center;
+	padding: var(--space-200) var(--space-300);
+	color: var(--color-neutral-100);
+	cursor: pointer;
+	text-align: center;
+	user-select: none;
+	text-decoration: none;
+	border-radius: var(--border-radius-xlg);
+	outline: none;
+	transition-property: background-color, border, opacity;
+	transition-duration: var(--transition-duration-fast);
+	transition-timing-function: var(--transition-timing-function);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* FILLED Variant */
+/* ---------------------------------------------------------------------------------------------------- */
+.action.-filled {
+	background-color: var(--color-brand-accent);
+	color: var(--color-neutral-100);
+	border: none;
+}
+.action.-filled:hover {
+	background-color: var(--color-brand-accent-hover);
+}
+.action.-filled:focus-visible {
+	outline: 4px solid var(--color-neutral-400);
+	box-shadow: 0 0 0 8px var(--color-brand-accent);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* SUBTLE Variant */
+/* ---------------------------------------------------------------------------------------------------- */
+.action.-subtle {
+	background-color: var(--color-transparency-on-dark);
+	border: none;
+}
+.action.-subtle:hover {
+	background-color: var(--color-transparency-on-dark-hover);
+}
+.action.-subtle:focus-visible {
+	outline: 4px solid var(--color-neutral-400);
+	box-shadow: 0 0 0 8px var(--color-brand-accent);
+}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* OUTLINE Variant */
+/* ---------------------------------------------------------------------------------------------------- */
+.action.-outline {
+	background-color: transparent;
+	border: var(--border-width) solid var(--color-transparency-on-dark);
+}
+.action.-outline:hover {
+	border: var(--border-width) solid var(--color-neutral-300);
+}
+.action.-outline:focus-visible {
+	outline: 3px solid var(--color-neutral-400);
+	box-shadow: 0 0 0 6px var(--color-brand-accent);
+}
+.action.-outline.-compressed { padding: var(--space-200) var(--space-100);}
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Action Internal Components */
+/* ---------------------------------------------------------------------------------------------------- */
+.action span {
+	font-family: var(--typeface-family-base);
+	font-weight: var(--typeface-weight-normal);
+	font-size: var(--typeface-size-body-large);
+	line-height: var(--typeface-line-height-base);
+	letter-spacing: var(--typeface-tracking-base);
+	margin: 0;
+	padding: 0;
+}
+.action span + i {
+	display: none;
+}
+@media (min-width: 992px) {
+	.action span + i {
+		display: flex;
+		margin-left: var(--space-100);
+	}
+}
+
+.action i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: var(--space-300);
+	height: var(--space-300);
+}
+.action i img {
+	width: 100%;
+	height: auto !important;
+}

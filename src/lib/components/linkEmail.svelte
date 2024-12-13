@@ -17,53 +17,44 @@
 	<p class="body_text -small -filled">Let's Build Together</p>
 </a>
 
-<style lang="scss">
+<style>
 	a {
 		position: relative;
 		display: flex;
 		align-items: center;
 		text-decoration: none;
 		font-size: 24px;
-		color: $color-brand-accent;
+		color: var(--color-brand-accent);
 		white-space: nowrap;
-		
-		&::before {
-			content: '';
-			display: inline-block;
-			width: 8px;
-			height: 8px;
-			-moz-border-radius: 8px;
-			-webkit-border-radius: 8px;
-			border-radius: 8px;
-			background-color: $color-brand-accent;
-			margin-right: 8px;
-			transition: transform $transition-duration-fast;
-			transition-timing-function: $transition-timing-function;
-		}
-
-		&::after {
-			content: '';
-			position:absolute;
-			width: 100%;
-			height: 1px;
-			background-color: $color-brand-accent;
-			top: 100%;
-			left: 0;
-			pointer-events: none;
-			transform-origin: 100% 50%;
-			transform: scale3d(0, 1, 1);
-			transition: transform $transition-duration-fast;
-			transition-timing-function: $transition-timing-function;
-		}
-
-		&:hover {
-			&::before {
-				transform: scale3d(0.8, 0.8, 0.8);
-			}
-			&::after {
-				transform-origin: 0% 50%;
-				transform: scale3d(1, 1, 1);
-			}
-		}
 	}
+	a::before {
+		content: '';
+		display: inline-block;
+		width: 8px;
+		height: 8px;
+		-moz-border-radius: 8px;
+		-webkit-border-radius: 8px;
+		border-radius: 8px;
+		background-color: var(--color-brand-accent);
+		margin-right: 8px;
+		transition: transform var(--transition-duration-fast);
+		transition-timing-function: var(--transition-timing-function);
+	}
+	a::after {
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 1px;
+		background-color: var(--color-brand-accent);
+		top: 100%;
+		left: 0;
+		pointer-events: none;
+		transform-origin: 100% 50%;
+		transform: scale3d(0, 1, 1);
+		transition: transform var(--transition-duration-fast);
+		transition-timing-function: var(--transition-timing-function);
+	}
+
+	a:hover::before { transform: scale3d(0.8, 0.8, 0.8); }
+	a:hover::after { transform-origin: 0% 50%; transform: scale3d(1, 1, 1); }
 </style>

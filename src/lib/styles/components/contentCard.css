@@ -1,0 +1,26 @@
+/* ---------------------------------------------------------------------------------------------------- */
+/* Content Card */
+/*
+/* All the styles necessary to style the Content Card component
+/* ---------------------------------------------------------------------------------------------------- */
+.content_card {
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-50);
+	padding: var(--space-400) var(--space-300);
+	border: var(--border-width) solid var(--color-brand-dark-lighter);
+	border-radius: var(--border-radius-xlg);
+	text-align: left;
+	transition-property: border;
+	transition-duration: var(--transition-duration-fast);
+	transition-timing-function: var(--transition-timing-function);
+}
+.content_card:hover {
+	border: var(--border-width) solid var(--color-neutral-300);
+}
+
+
+.content_card p.number,
+.content_card .icon {
+	margin-bottom: var(--space-400);
+}

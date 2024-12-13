@@ -24,19 +24,6 @@
 	
 </section>
 
-<style lang="scss">
-	section.solution {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: $space-400;
-		text-align: center;
-		
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: $space-200;
-			align-items: center;
-		}
-	}
+<style>
+	section.solution { align-items: center; text-align: center; }
 </style>

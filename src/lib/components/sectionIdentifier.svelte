@@ -13,36 +13,33 @@
 	<p class="body_text -nano">{label}</p>
 </div>
 
-<style lang="scss">
+<style>
 	.identifier {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		// padding-bottom: $space-500;
-		gap: $space-200;
+		gap: var(--space-200);
+	}
 
-		p { color: $color-brand-accent; }
+	.identifier.-horizontal {
+		flex-direction: row;
+		width: 100%;
+	}
 
-
-		&.-horizontal {
-			flex-direction: row;
-			width: 100%;
-
-			p {
-				display: flex;
-				flex-direction: row;
-				align-items: center;
-				flex: 1;
-				gap: $space-200;
-
-				&::after {
-					content: '';
-					height: 1px;
-					flex: 1;
-					background-color: $color-brand-accent;
-				}
-			}
-		}
-
+	.identifier p {
+		color: var(--color-brand-accent);
+	}
+	.identifier.-horizontal p {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		flex: 1;
+		gap: var(--space-200);
+	}
+	.identifier.-horizontal p::after {
+		content: '';
+		height: 1px;
+		flex: 1;
+		background-color: var(--color-brand-accent);
 	}
 </style>

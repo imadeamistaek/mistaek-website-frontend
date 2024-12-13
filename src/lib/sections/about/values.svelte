@@ -20,19 +20,7 @@
 	
 </section>
 
-<style lang="scss">
-	section.approach {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: $space-300;
-		text-align: center;
-		
-		header {
-			display: flex;
-			flex-direction: column;
-			gap: $space-50;
-			align-items: center;
-		}
-	}
+<style>
+	section.approach { align-items: center; text-align: center; }
+	section.approach header { gap: var(--space-50); }
 </style>

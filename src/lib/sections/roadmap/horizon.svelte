@@ -27,18 +27,7 @@
 
 </section>
 
-<style lang="scss">
-	section.horizon {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		gap: $space-400;
-
-		header {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			text-align: center;
-		}
-	}
+<style>
+	section.horizon { align-items: center; }
+	section.horizon header { text-align: center; gap: 0;}
 </style>

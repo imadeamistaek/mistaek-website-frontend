@@ -16,38 +16,31 @@
 
 </section>
 
-<style lang="scss">
+<style>
 	section.approach {
 		position: relative;
+		align-items: center;
+		justify-content: center;
+		gap: var(--space-300);
+	}
+	section.approach header {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: center;
-		gap: $space-300;
+		gap: var(--space-400);
+		text-align: left;
+	}
+	section.approach img.background {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		width: 90vw;
+		margin: auto;
+		z-index: -1;
+	}
 
-		@media(min-width: $breakpoint-lg) {
-			& {padding: $space-1000 0;}
-		}
-
-		header {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			gap: $space-400;
-			text-align: left;
-
-			@media(min-width: $breakpoint-lg) {
-				& { text-align: center; }
-			}
-		}
-
-		img.background {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			width: 90vw;
-			margin: auto;
-			z-index: -1;
-		}
+	@media (min-width: 992px) {
+		.section.approach { padding: var(--space-1000) 0; }
+		.section.approach header { text-align: center; }
 	}
 </style>

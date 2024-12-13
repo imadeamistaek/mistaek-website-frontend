@@ -27,7 +27,7 @@
 		</div>
 	</div>
 </section>
-
+<!-- 
 <style lang="scss">
 	.content_group { 
 		h4 span {
@@ -68,4 +68,4 @@
 			}
 		}
 	}
-</style>
+</style> -->
