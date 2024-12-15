@@ -1,7 +1,7 @@
 <script>
 	import ActionLink from "./actionLink.svelte";
     import Badge from "./badge.svelte";
-	import Collapsible from "./collapsible.svelte";
+	import Collapsible from "./collapsibleItem.svelte";
 
 	export let hasBadge = false;
 	

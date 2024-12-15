@@ -2,7 +2,7 @@
 	import { tasks } from "$lib/utils/roadmap";
 	import SectionIdentifier from "$lib/components/sectionIdentifier.svelte";
 	import StageTask from "$lib/components/stageTask.svelte";
-	import Collapsible from "$lib/components/collapsible.svelte";
+	import Collapsible from "$lib/components/collapsibleItem.svelte";
 </script>
 
 <section id="roadmap-section" class="section roadmap col-8" aria-labelledby="roadmap-heading">
@@ -132,7 +132,7 @@
 	:global(.collapsible .items) {
 		position: relative;
 	}
-	:global(.collapsible .items::before) {
+	/* :global(.collapsible .items::before) {
 		position: absolute;
 		top: -5px;
 		left: -5px;
@@ -150,5 +150,5 @@
 			border-left: 1px dashed var(--color-neutral-300);
 		}
 		:global(.collapsible .items::before) { display: block; }
-	}
+	} */
 </style>
