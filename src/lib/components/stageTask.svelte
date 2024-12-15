@@ -1,5 +1,5 @@
 <script>
-    import Badge from "./badge.svelte";
+    import Badge from "./badge.svelte";1
 
 	export let index; //Number of each task
 	export let title; //Title of the task

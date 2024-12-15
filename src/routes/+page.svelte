@@ -4,7 +4,6 @@
 
 <script>
 	// import ContactForm from '$lib/components/ContactForm.svelte';
-	import '$lib/styles/main.css';
 	import Hero from '$lib/sections/home/hero.svelte';
 	import Problem from '$lib/sections/home/problem.svelte';
 	import Solution from '$lib/sections/home/solution.svelte';

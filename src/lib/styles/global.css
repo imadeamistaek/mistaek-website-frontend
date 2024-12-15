@@ -213,14 +213,14 @@ a:focus-visible {
 	box-shadow: 0 0 0 8px var(--color-brand-accent);
 }
 
-a p {
+a > p {
 	position: relative;
 	white-space: nowrap;
 	transition-property: color;
 	transition-duration: var(--transition-duration-fast);
 	transition-timing-function: var(--transition-timing-function);
 }
-a p::after {
+a > p::after {
 	content: '';
 	position:absolute;
 	width: 100%;
@@ -234,10 +234,10 @@ a p::after {
 	transition: transform var(--transition-duration-fast);
 	transition-timing-function: var(--transition-timing-function);
 }
-a p:hover {
+a > p:hover {
 	color: var(--color-neutral-100);
 }
-a p:hover::after {
+a > p:hover::after {
 	transform-origin: 0% 50%;
 	transform: scale3d(1, 1, 1);
 }

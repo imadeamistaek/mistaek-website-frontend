@@ -1,6 +1,7 @@
 <script>
 	import { page } from "$app/stores"; //Sveltekit store to get current page info
 	import { blur } from 'svelte/transition';
+	import '$lib/styles/main.css';
 
 	import NavigationBar from '$lib/components/navigationBar.svelte';
 	import Footer from '$lib/components/footer.svelte';
