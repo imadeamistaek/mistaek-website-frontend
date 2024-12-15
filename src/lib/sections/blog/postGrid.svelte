@@ -1,7 +1,7 @@
 <script>
 	import { goto } from '$app/navigation';
 	import { postsStore } from '$lib/stores/posts';
-	import ArticleCard from "$lib/components/ArticleCard.svelte";
+	import ArticleCard from "$lib/components/articleCard.svelte";
 	
 	export let posts = []; // Posts are now passed in as props
 	
