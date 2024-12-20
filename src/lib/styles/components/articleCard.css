@@ -1,0 +1,64 @@
+/* ---------------------------------------------------------------------------------------------------- */
+/* Article Card */
+/*
+/* This is everything needed to style the Article Card component, present at the blog page
+/* ---------------------------------------------------------------------------------------------------- */
+
+.article_card {
+	grid-column: span 1;
+	margin-bottom: var(--space-400);
+}
+.article_card * { white-space: normal; }
+.article_card.-highlight { grid-column: span 2;}
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Article Card link */
+/* ---------------------------------------------------------------------------------------------------- */
+.article_card a {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-200);
+}
+.article_card a:hover img { transform: scale(1.08); }
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Article Card slot image */
+/* ---------------------------------------------------------------------------------------------------- */
+.article_card a .slot.-image{
+	position: relative;
+	width: 100%;
+	border-radius: var(--border-radius-xlg);
+	overflow: hidden;
+}
+.article_card a .slot.-image .pairing_tags{
+	position: absolute;
+	top: var(--space-200);
+	left: var(--space-200);
+	z-index: 1;
+}
+.article_card a .slot.-image img{
+	width: 100%;
+	display: block;
+	aspect-ratio: 4 / 5;
+	object-fit: cover;
+	transition-property: transform;
+	transition-duration: var(--transition-duration-mid);
+	transition-timing-function: var(--transition-timing-function);
+}
+
+@media (min-width: 768px) {
+	.article_card.-highlight a .slot.-image img { aspect-ratio: 5/4; }
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------- */
+/* Article Card slot details */
+/* ---------------------------------------------------------------------------------------------------- */
+.article_card a .slot.-details{
+	display: flex;
+	flex-direction: column;
+	gap: var(--space-200);
+}

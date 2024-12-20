@@ -1,0 +1,7 @@
+.horizontal_divider {
+	width: 100%;
+	height: 1px;
+	background-color: var(--color-transparency-on-dark);
+	display: block;
+	margin: var(--space-800) 0;
+}

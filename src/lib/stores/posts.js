@@ -1,4 +1,7 @@
+// src/lib/stores/posts.js
 import { writable } from 'svelte/store';
 
-// Store to hold fetched posts
-export const postsStore = writable([]);
+export const postsStore = writable({
+  latestPost: null,
+  otherPosts: [],
+});

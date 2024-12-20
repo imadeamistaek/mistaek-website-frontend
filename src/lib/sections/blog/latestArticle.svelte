@@ -4,8 +4,7 @@
 	import ArticleCard from "$lib/components/articleCard.svelte";
 	
 	export let posts = []; // Posts are now passed in as props
-
-
+	
 	// Subscribe to the store
 	const unsubscribe = postsStore.subscribe((value) => {
 		posts = value;
@@ -22,21 +21,17 @@
 		unsubscribe();
 	});
 
-	const otherPosts = posts.slice(1) || [];
-
+	const latestPost = posts[0] || null;
 </script>
 
 <div class="row">
-	<div class="grid_heading">
-		<h2 class="display_heading">All articles</h2>
-	</div>
-</div>
-<div class="row">
 	<div class="blog_container">
-		{#if otherPosts && otherPosts.length > 0}
-		{#each otherPosts as article}
-			<ArticleCard post={article} on:click={() => goToPost(article.slug)} />
-		{/each}
+		<div class="grid_heading">
+			<p class="body_text -medium -subtle display_heading">Latest article</p>
+		</div>
+
+		{#if latestPost}
+			<ArticleCard customClass={'-highlight'} post={latestPost} on:click={() => goToPost(latestPost.slug)} />
 		{:else}
 		<p>Loading post...</p>
 		{/if}
@@ -48,6 +43,10 @@
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		gap: var(--space-400);
+	}
+
+	.blog_container .grid_heading {
+		span: 1;
 	}
 	
 	@media (max-width: 768px) {
