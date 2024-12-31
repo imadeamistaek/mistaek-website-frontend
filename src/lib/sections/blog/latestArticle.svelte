@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
 	import { goto } from '$app/navigation';
 	import { postsStore } from '$lib/stores/posts';
 	import ArticleCard from "$lib/components/articleCard.svelte";
@@ -38,6 +38,41 @@
 	</div>
 </div>
 	
+<style>
+	.blog_container {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: var(--space-400);
+	}
+
+	.blog_container .grid_heading {
+		span: 1;
+	}
+	
+	@media (max-width: 768px) {
+		.blog_container { grid-template-columns: 1fr 1fr; }
+	}
+	
+	@media (max-width: 480px) {
+		.blog_container { grid-template-columns: 1fr; }
+	}
+</style> -->
+
+
+<script>
+    export let post;
+	import ArticleCard from "$lib/components/articleCard.svelte";
+</script>
+
+<div class="row">
+	<div class="blog_container">
+		<div class="grid_heading">
+			<p class="body_text -medium -subtle display_heading">Latest article</p>
+		</div>
+		<ArticleCard customClass={'-highlight'} post={post} />
+	</div>
+</div>
+
 <style>
 	.blog_container {
 		display: grid;

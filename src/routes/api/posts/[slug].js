@@ -1,11 +1,11 @@
 // src/routes/api/posts/[slug].js
-
 export async function get({ params }) {
 	const { slug } = params; // `slug` is the dynamic part of the URL
+	const BASE_URL = import.meta.env.VITE_API_URL;
 
 	try {
 		// Replace with your Payload CMS API URL
-		const url = `http://localhost:3000/api/posts/${slug}`;
+		const url = `${BASE_URL}/api/posts/${slug}`;
 		const res = await fetch(url);
 
 		// Handle successful response

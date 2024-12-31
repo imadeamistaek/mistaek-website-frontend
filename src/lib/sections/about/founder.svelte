@@ -33,12 +33,13 @@
 		}
 	}
 
-	section.founder figure { margin: 0; }
+	section.founder figure { margin: 0; max-width: 320px;}
 	section.founder figure img {
 		width: 100%;
 		display: block;
-		aspect-ratio: 2 / 3;
+		aspect-ratio: 4/5;
 		object-fit: cover;
+		object-position: top;
 		border-radius: var(--border-radius-md);
 	}
 	

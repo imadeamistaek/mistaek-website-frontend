@@ -1,6 +1,9 @@
 <script>
-	import Badge from "./badge.svelte";
+	const BASE_URL = import.meta.env.VITE_API_URL;
+
+	import Tag from "./tag.svelte";
 	import { createEventDispatcher } from 'svelte';
+	import { fade } from 'svelte/transition'; // Importing fade transition
 	import { hoveredPost } from '$lib/stores/hoveredPost';  // Import the store (if needed)
 	export let post; // Accept the post as a prop
 	export let customClass = null;
@@ -28,7 +31,7 @@
 	}
 </script>
 
-<article class={`article_card ${customClass}`}>
+<article class={`article_card ${customClass}`} transition:fade={{ duration: 640 }}>
 	<a
 		href={`/blog/${post.slug}`}
 		class="article_card-link"
@@ -38,21 +41,23 @@
 		on:mouseenter={onMouseEnter}
 		on:mouseleave={onMouseLeave}
 		on:click={onClick}
-		>
+	>
 		<div class="slot -image">
 			<div class="pairing_tags">
-				{#if post.categories && post.categories.length > 0}
-				{#each post.categories as category (category.id)}  <!-- You can use category.id as the key for each loop -->
-					<Badge label={category.title || 'Not Categorised'} customClass="-outline" />
-				{/each}
+				{#if Array.isArray(post.categories) && post.categories.length > 0}
+					{#each post.categories as category (category.id || category)}
+						<Tag label={category.title || category || 'No Category'} />
+					{/each}
+				{:else if post.categories}
+					<Tag label={post.categories} />
 				{:else}
-					<Badge label="No Category" customClass="-subtle" />
+					<Tag label="No Category" />
 				{/if}
 			</div>
-			{#if post.meta.image}
+			{#if post.featureImage}
 				<img 
-					src={`http://localhost:3000${post.meta.image.url}`} 
-					alt={post.meta.image.alt} 
+					src={`${BASE_URL}${post.featureImage}`} 
+					alt={post.meta?.image?.alt || post.title || 'Article Image'} 
 					class="article_card-image" 
 				/>
 			{/if}

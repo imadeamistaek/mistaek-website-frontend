@@ -12,7 +12,7 @@
 	outline: none;
 	padding: var(--space-100) var(--space-200);
 	color: var(--color-neutral-100);
-	background-color: transparent;
+	background-color: var(--color-brand-dark);
 	border: var(--border-width) solid var(--color-brand-dark-lighter);
 	border-radius: var(--border-radius-max);
 }

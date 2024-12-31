@@ -9,7 +9,8 @@
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: var(--zindex-fixed);
+	width: 100%;
+	z-index: var(--zindex-sticky);
 }
 .navigation_bar.-has-blur {
 	-webkit-backdrop-filter: blur(16px);

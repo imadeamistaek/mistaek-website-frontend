@@ -21,7 +21,7 @@
 		flex-direction: row;
 		align-items: center;
 		gap: var(--space-200);
-		margin: var(--space-max) 0;
+		margin: var(--space-max) 0 0;
 	}
 	.author .author_details {
 		display: flex;
@@ -36,5 +36,9 @@
 		object-fit: cover;
 		border: var(--border-width) solid var(--color-brand-dark-lighter);
 		border-radius: var(--border-radius-max);
+	}
+	
+	@media (max-width: 768px) {
+		.author { margin: var(--space-800) 0; }
 	}
 </style>

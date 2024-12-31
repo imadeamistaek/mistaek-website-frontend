@@ -16,12 +16,13 @@
 /* ---------------------------------------------------------------------------------------------------- */
 /* HERO */
 /* ---------------------------------------------------------------------------------------------------- */
-@media (min-width: 992px) {
+@media (min-width: 768px) {
 	.hero {
 		height: 80vh;
 		padding: 0;
 		justify-content: center;
 		text-align: left;
+		background-position: center -143%;
 	}
 }
 
@@ -33,6 +34,7 @@
 .hero p { 
 	width: 100%;
 	max-width: 640px;
+	margin: auto;
 	margin-bottom: var(--space-600);
 }
 .hero p .highlight { color: var(--color-brand-accent); }
@@ -41,11 +43,12 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	justify-content: center;
 	gap: var(--space-200);
 }
-@media (min-width: 992px) {
-	.hero .action_group {
-		flex-direction: row;
-	}
+@media (min-width: 768px) {
+
+	.hero p {  margin: 0; }
+	.hero .action_group { flex-direction: row; justify-content: flex-start; }
 }
 </style>
