@@ -58,7 +58,8 @@
 				<img 
 					src={`${BASE_URL}${post.featureImage}`} 
 					alt={post.meta?.image?.alt || post.title || 'Article Image'} 
-					class="article_card-image" 
+					class="article_card-image"
+					loading="lazy"
 				/>
 			{/if}
 		</div>
