@@ -4,7 +4,7 @@
 	export let isVisible = false; // Controlled externally
 </script>
 
-{#if isVisible}
+{#if true}
 	<div class="loader-wrapper" in:fly={{ y: 2000, duration: 800 }} out:fly={{ y: -2000, duration: 800, delay: 240 }}>
 		<div class="loader-content" in:fly={{ y: 320, duration: 800, delay: 800 }} out:fly={{ y: -320, duration: 800 }} >
 			<picture>
@@ -30,6 +30,10 @@
 		justify-content: center;
 	}
 
-	.loader-content { width: 4cqw; }
+	.loader-content { width: 16cqw; }
 	.loader-content picture img { width: 100%; }
+
+	@media (min-width: 992px) {
+		.loader-content { width: 4cqw; }
+	}
 </style>
