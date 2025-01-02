@@ -18,5 +18,5 @@
 
 <style>
 	section.follow { align-items: center; margin-bottom: var(--space-500); }
-	section.follow header { text-align: center; gap: 0; margin-bottom: var(--space-500);}
+	section.follow header { text-align: center; gap: 0; margin-bottom: var(--space-500); align-items: center;}
 </style>
