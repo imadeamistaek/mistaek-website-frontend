@@ -47,7 +47,7 @@
 	margin: 0 auto;
 	background: radial-gradient(62.87% 100% at 50% 100%, var(--color-brand-dark-lighter) 0%, rgba(255, 255, 255, 0) 100%);
 }
-@media (min-width: 992px) {
+@media (min-width: 1280px) {
 	.navigation_bar .container {
 		padding: var(--space-200) 0;
 	}

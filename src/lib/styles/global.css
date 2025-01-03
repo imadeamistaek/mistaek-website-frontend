@@ -289,10 +289,7 @@ section.hero {
 	flex-direction: column;
 	align-items: start;
 	justify-content: start;
-	padding: var(--space-1000) 0;
-	/* background-image: url('/background-grid-top.png');
-	background-repeat: no-repeat;
-	background-position: 50% 145%; */
+	padding: var(--space-max) 0 0;
 }
 
 /* ROW -------------------------------------------------- */

@@ -18,8 +18,8 @@
 /* ---------------------------------------------------------------------------------------------------- */
 @media (min-width: 768px) {
 	.hero {
-		height: 80vh;
-		padding: 0;
+		/* height: 80vh; */
+		padding: var(--space-max) 0;
 		justify-content: center;
 		text-align: left;
 		background-position: center -143%;

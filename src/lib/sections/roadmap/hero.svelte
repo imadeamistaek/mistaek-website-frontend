@@ -9,7 +9,7 @@
 
 <style>
 	section.hero.-roadmap {container-type: inline-size; overflow: hidden;}
-	section.hero.-roadmap h1 { margin-bottom: var(--space-300); font-family: var(--typeface-family-highlight); font-size: 23cqw;}
+	section.hero.-roadmap h1 { margin-bottom: var(--space-300); font-family: var(--typeface-family-highlight); font-size: 22.5cqw; width: 100%; text-align: center;}
 	@media (min-width: 992px) {
 		section.hero.-roadmap {
 			padding: var(--space-1000) 0 0;
