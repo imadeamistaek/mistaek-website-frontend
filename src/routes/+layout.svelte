@@ -7,7 +7,6 @@
 	import LoaderInitial from '$lib/components/loaderInitial.svelte';
 	import NavigationBar from '$lib/components/navigationBar.svelte';
 	import Footer from '$lib/components/footer.svelte';
-	import { initializeGoogleAnalytics, trackPageView } from '$lib/utils/analytics';
 
 	import { fly, scale } from 'svelte/transition';
 	import '$lib/styles/main.css';
@@ -23,13 +22,10 @@
 			showInitialLoader = false; // Hide the initial loader
 			showContent = true; // Show content
 		}, 1200); // Adjust duration as needed
-		if (import.meta.env.MODE === 'production') {
-			initializeGoogleAnalytics('G-FMXFEETWCF');
-		}
+		// if (import.meta.env.MODE === 'production') {
+		// 	initializeGoogleAnalytics('G-FMXFEETWCF');
+		// }
 	});
-
-  // Track page views on route changes
-  $: trackPageView($page.url.pathname);
 
 	// Navigation hooks
 	beforeNavigate(() => {
