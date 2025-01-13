@@ -7,7 +7,7 @@
 	import LoaderInitial from '$lib/components/loaderInitial.svelte';
 	import NavigationBar from '$lib/components/navigationBar.svelte';
 	import Footer from '$lib/components/footer.svelte';
-	import { initializeGoogleAnalytics } from '$lib/utils/analytics';
+	import { initializeGoogleAnalytics, trackPageView } from '$lib/utils/analytics';
 
 	import { fly, scale } from 'svelte/transition';
 	import '$lib/styles/main.css';
@@ -18,6 +18,7 @@
 
 	// Handle initial load
 	onMount(() => {
+
 		setTimeout(() => {
 			showInitialLoader = false; // Hide the initial loader
 			showContent = true; // Show content
@@ -26,6 +27,9 @@
 			initializeGoogleAnalytics('G-FMXFEETWCF');
 		}
 	});
+
+  // Track page views on route changes
+  $: trackPageView($page.url.pathname);
 
 	// Navigation hooks
 	beforeNavigate(() => {
